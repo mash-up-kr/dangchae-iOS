@@ -9,18 +9,18 @@ import RIBs
 import RxSwift
 import UIKit
 
-protocol LoggedOutPresentableListener: class {
+protocol SignedOutPresentableListener: class {
   func signIn(with provider: AuthProvider?)
 }
 
-final class LoggedOutViewController:
+final class SignedOutViewController:
   UIViewController,
-  LoggedOutPresentable,
-  LoggedOutViewControllable,
+  SignedOutPresentable,
+  SignedOutViewControllable,
   StoryboardBuildable
 {
   
-  weak var listener: LoggedOutPresentableListener?
+  weak var listener: SignedOutPresentableListener?
   
   // MARK: 🖼 UI
   @IBOutlet private weak var kakaoButton: UIButton?

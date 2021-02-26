@@ -7,23 +7,23 @@
 
 import RIBs
 
-protocol LoggedOutInteractable: Interactable {
-  var router: LoggedOutRouting? { get set }
-  var listener: LoggedOutListener? { get set }
+protocol SignedOutInteractable: Interactable {
+  var router: SignedOutRouting? { get set }
+  var listener: SignedOutListener? { get set }
 }
 
-protocol LoggedOutViewControllable: ViewControllable {
+protocol SignedOutViewControllable: ViewControllable {
   // TODO: Declare methods the router invokes to manipulate the view hierarchy.
 }
 
-final class LoggedOutRouter:
-  ViewableRouter<LoggedOutInteractable, LoggedOutViewControllable>,
-  LoggedOutRouting
+final class SignedOutRouter:
+  ViewableRouter<SignedOutInteractable, SignedOutViewControllable>,
+  SignedOutRouting
 {
   // MARK: 🏁 Initialization
   override init(
-    interactor: LoggedOutInteractable,
-    viewController: LoggedOutViewControllable
+    interactor: SignedOutInteractable,
+    viewController: SignedOutViewControllable
   ) {
     super.init(interactor: interactor, viewController: viewController)
     interactor.router = self

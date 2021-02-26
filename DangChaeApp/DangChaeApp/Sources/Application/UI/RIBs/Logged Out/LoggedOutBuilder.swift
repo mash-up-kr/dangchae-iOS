@@ -7,39 +7,39 @@
 
 import RIBs
 
-protocol LoggedOutDependency: Dependency {
+protocol SignedOutDependency: Dependency {
   // TODO: Declare the set of dependencies required by this RIB, but cannot be
   // created by this RIB.
 }
 
-final class LoggedOutComponent: Component<LoggedOutDependency> {
+final class SignedOutComponent: Component<SignedOutDependency> {
   
   // TODO: Declare 'fileprivate' dependencies that are only used by this RIB.
 }
 
 // MARK: - Builder
 
-protocol LoggedOutBuildable: Buildable {
-  func build(withListener listener: LoggedOutListener) -> LoggedOutRouting
+protocol SignedOutBuildable: Buildable {
+  func build(withListener listener: SignedOutListener) -> SignedOutRouting
 }
 
-final class LoggedOutBuilder:
-  Builder<LoggedOutDependency>,
-  LoggedOutBuildable
+final class SignedOutBuilder:
+  Builder<SignedOutDependency>,
+  SignedOutBuildable
 {
   
   // MARK: 🏁 Initialization
-  override init(dependency: LoggedOutDependency) {
+  override init(dependency: SignedOutDependency) {
     super.init(dependency: dependency)
   }
   
   // MARK: 🏗 Build
-  func build(withListener listener: LoggedOutListener) -> LoggedOutRouting {
-    let component = LoggedOutComponent(dependency: dependency)
-    let viewController = LoggedOutViewController.instantiate()
-    let interactor = LoggedOutInteractor(presenter: viewController)
+  func build(withListener listener: SignedOutListener) -> SignedOutRouting {
+    let component = SignedOutComponent(dependency: dependency)
+    let viewController = SignedOutViewController.instantiate()
+    let interactor = SignedOutInteractor(presenter: viewController)
     interactor.listener = listener
-    return LoggedOutRouter(
+    return SignedOutRouter(
       interactor: interactor,
       viewController: viewController
     )

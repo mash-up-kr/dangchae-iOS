@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		349718A0DC725519E2BF10DF /* Pods_DangChaeApp_DangChaeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5127D22AE0DBB297573C37CC /* Pods_DangChaeApp_DangChaeAppUITests.framework */; };
+		39086E5325E98B52009DE893 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39086E5225E98B52009DE893 /* Logger.swift */; };
 		391562CF25E91ADA0082B040 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391562CE25E91ADA0082B040 /* OAuth.swift */; };
 		391562EE25E920750082B040 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391562E925E920750082B040 /* RootRouter.swift */; };
 		391562EF25E920750082B040 /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391562EA25E920750082B040 /* RootViewController.storyboard */; };
@@ -65,6 +66,7 @@
 /* Begin PBXFileReference section */
 		2AC4604AD49CFE0E2D468EC1 /* Pods-DangChaeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DangChaeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DangChaeAppTests/Pods-DangChaeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		39086E3525E98767009DE893 /* DangChaeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DangChaeApp.entitlements; sourceTree = "<group>"; };
+		39086E5225E98B52009DE893 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		391562CE25E91ADA0082B040 /* OAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
 		391562E925E920750082B040 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		391562EA25E920750082B040 /* RootViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 				3923969C25B652C6006B4A1F /* Domain */,
 				3923969D25B652CB006B4A1F /* Data */,
 				392396B025B653BC006B4A1F /* Application */,
+				39086E5225E98B52009DE893 /* Logger.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -667,6 +670,7 @@
 				391562F025E920750082B040 /* RootViewController.swift in Sources */,
 				3915631525E9246E0082B040 /* LoggedOutInteractor.swift in Sources */,
 				391563AD25E952D20082B040 /* NaverThirdPartyLoginConnection+Rx.swift in Sources */,
+				39086E5325E98B52009DE893 /* Logger.swift in Sources */,
 				3915631425E9246E0082B040 /* LoggedOutBuilder.swift in Sources */,
 				3915632925E934570082B040 /* StoryboardBuildable.swift in Sources */,
 				392396DF25B6561C006B4A1F /* View.swift in Sources */,
