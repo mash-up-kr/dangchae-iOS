@@ -8,11 +8,17 @@
 import Foundation
 import RxSwift
 
-struct OAuthResult {
-  let provider: String
+enum AuthProvider: String {
+  case kakao
+  case naver
+  case apple
+}
+
+struct AuthResponse {
+  let provider: AuthProvider
   let accessToken: String
 }
 
 protocol OAuth {
-  func authorize() -> Observable<OAuthResult>
+  func authorize() -> Observable<AuthResponse>
 }
