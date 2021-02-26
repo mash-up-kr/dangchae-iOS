@@ -1,0 +1,6 @@
+framework module Pods_DangChaeApp_DangChaeAppUITests {
+  umbrella header "Pods-DangChaeApp-DangChaeAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
