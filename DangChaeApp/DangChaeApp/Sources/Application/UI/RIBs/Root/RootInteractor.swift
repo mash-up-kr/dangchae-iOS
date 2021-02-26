@@ -9,7 +9,8 @@ import RIBs
 import RxSwift
 
 protocol RootRouting: LaunchRouting {
-  // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
+  func routeToLoggedOut()
+  func routeToLoggedIn()
 }
 
 protocol RootPresentable: Presentable {
@@ -21,7 +22,11 @@ protocol RootListener: class {
   // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
 }
 
-final class RootInteractor: PresentableInteractor<RootPresentable>, RootInteractable, RootPresentableListener {
+final class RootInteractor:
+  PresentableInteractor<RootPresentable>,
+  RootInteractable,
+  RootPresentableListener
+{
   
   weak var router: RootRouting?
   weak var listener: RootListener?

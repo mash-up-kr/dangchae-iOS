@@ -12,7 +12,7 @@ protocol RootDependency: Dependency {
   // created by this RIB.
 }
 
-final class RootComponent: Component<RootDependency> {
+final class RootComponent: Component<RootDependency>, LoggedOutDependency {
 }
 
 // MARK: - Builder
@@ -29,11 +29,13 @@ final class RootBuilder: Builder<RootDependency>, RootBuildable {
   
   func build() -> RootRouting {
     let component = RootComponent(dependency: dependency)
-    let viewController = RootViewController()
+    let viewController = RootViewController.instantiate()
     let interactor = RootInteractor(presenter: viewController)
+    let loggedOutBuilder = LoggedOutBuilder(dependency: component)
     return RootRouter(
       interactor: interactor,
-      viewController: viewController
+      viewController: viewController,
+      loggedOutBuilder: loggedOutBuilder
     )
   }
 }
