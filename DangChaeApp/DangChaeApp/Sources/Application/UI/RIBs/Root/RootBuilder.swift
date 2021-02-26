@@ -23,10 +23,12 @@ protocol RootBuildable: Buildable {
 
 final class RootBuilder: Builder<RootDependency>, RootBuildable {
   
+  // MARK: 🏁 Initialization
   override init(dependency: RootDependency) {
     super.init(dependency: dependency)
   }
   
+  // MARK: 🏗 Build
   func build() -> RootRouting {
     let component = RootComponent(dependency: dependency)
     let viewController = RootViewController.instantiate()

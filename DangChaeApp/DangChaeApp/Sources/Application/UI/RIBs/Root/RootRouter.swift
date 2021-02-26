@@ -26,6 +26,7 @@ final class RootRouter:
   
   private var loggedOutRouter: LoggedOutRouting?
   
+  // MARK: 🏁 Initialization
   init(
     interactor: RootInteractable,
     viewController: RootViewControllable,
@@ -42,6 +43,7 @@ final class RootRouter:
     routeToLoggedOut()
   }
   
+  // MARK: ⛵️ Route
   func routeToLoggedOut() {
     let loggedOut = loggedOutBuilder.build(withListener: interactor)
     self.loggedOutRouter = loggedOut

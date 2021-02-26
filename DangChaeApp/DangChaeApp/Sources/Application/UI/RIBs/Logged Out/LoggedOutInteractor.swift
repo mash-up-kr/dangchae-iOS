@@ -29,8 +29,7 @@ final class LoggedOutInteractor:
   weak var router: LoggedOutRouting?
   weak var listener: LoggedOutListener?
   
-  // TODO: Add additional dependencies to constructor. Do not perform any logic
-  // in constructor.
+  // MARK: 🏁 Initialization
   override init(presenter: LoggedOutPresentable) {
     super.init(presenter: presenter)
     presenter.listener = self
