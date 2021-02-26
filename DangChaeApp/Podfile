@@ -20,6 +20,9 @@ target 'DangChaeApp' do
   
   # 🌐 Network
   pod 'Moya'
+  #pod 'Moya/RxSwift'
+  pod 'MoyaSugar'
+  #pod 'MoyaSugar/RxSwift' # Use with RxSwift
   
   # 💉 Dependency Injection
   pod 'Swinject'

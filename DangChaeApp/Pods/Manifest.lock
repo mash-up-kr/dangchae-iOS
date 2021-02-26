@@ -9,10 +9,14 @@ PODS:
   - KakaoSDKUser (2.3.2):
     - KakaoSDKAuth (= 2.3.2)
     - KakaoSDKCommon (= 2.3.2)
-  - Moya (14.0.0):
-    - Moya/Core (= 14.0.0)
-  - Moya/Core (14.0.0):
+  - Moya (15.0.0-alpha.1):
+    - Moya/Core (= 15.0.0-alpha.1)
+  - Moya/Core (15.0.0-alpha.1):
     - Alamofire (~> 5.0)
+  - MoyaSugar (1.3.3):
+    - MoyaSugar/Core (= 1.3.3)
+  - MoyaSugar/Core (1.3.3):
+    - Moya (>= 14.0.0-beta.2)
   - naveridlogin-sdk-ios (4.1.3)
   - RIBs (0.9.1):
     - RxSwift (~> 4.0)
@@ -30,6 +34,7 @@ DEPENDENCIES:
   - KakaoSDKAuth
   - KakaoSDKUser
   - Moya
+  - MoyaSugar
   - naveridlogin-sdk-ios
   - RIBs
   - RxCocoa
@@ -48,6 +53,7 @@ SPEC REPOS:
     - KakaoSDKCommon
     - KakaoSDKUser
     - Moya
+    - MoyaSugar
     - naveridlogin-sdk-ios
     - RIBs
     - RxCocoa
@@ -64,7 +70,8 @@ SPEC CHECKSUMS:
   KakaoSDKAuth: 8db7c7a0561b137477bb984bbdab2eeda7745d23
   KakaoSDKCommon: 4bb3981337921686948b7be094590f2edec5df87
   KakaoSDKUser: e6c0017a41e87a94bdcd873d0178ad75be8126d4
-  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Moya: 101c94dfb29289736ecd20fa6e82bea665e0671b
+  MoyaSugar: 63390c557e038c087dc4bcc8a9f9fda69647ce43
   naveridlogin-sdk-ios: b9d7c20677981177ed994ecb1c8c2b49f223277d
   RIBs: 879184fbca567425c488d6b3d14a9c5abfbf9d47
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
@@ -74,6 +81,6 @@ SPEC CHECKSUMS:
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 420974edece36aa6d43d987c2ce99112d3c536f7
+PODFILE CHECKSUM: 31e755a1e605856a744c5d964255f294228e134d
 
 COCOAPODS: 1.10.1

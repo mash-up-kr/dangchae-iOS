@@ -21,6 +21,8 @@
 		39086E7E25E98ECA009DE893 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39086E7925E98ECA009DE893 /* HomeInteractor.swift */; };
 		39086E8325E9910B009DE893 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39086E8225E9910B009DE893 /* View+.swift */; };
 		39086E8B25E991A6009DE893 /* XibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39086E8A25E991A6009DE893 /* XibLoadable.swift */; };
+		39086E9125E99334009DE893 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39086E9025E99334009DE893 /* HTTPClient.swift */; };
+		39086E9D25E997D5009DE893 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39086E9C25E997D5009DE893 /* RemoteDataSource.swift */; };
 		391562CF25E91ADA0082B040 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391562CE25E91ADA0082B040 /* OAuth.swift */; };
 		391562EE25E920750082B040 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391562E925E920750082B040 /* RootRouter.swift */; };
 		391562EF25E920750082B040 /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391562EA25E920750082B040 /* RootViewController.storyboard */; };
@@ -48,8 +50,6 @@
 		3923967825B65251006B4A1F /* DangChaeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923967725B65251006B4A1F /* DangChaeAppTests.swift */; };
 		3923968325B65251006B4A1F /* DangChaeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923968225B65251006B4A1F /* DangChaeAppUITests.swift */; };
 		392396BE25B65468006B4A1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392396BD25B65468006B4A1F /* Assets.xcassets */; };
-		392396C525B654FD006B4A1F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392396C425B654FD006B4A1F /* Data.swift */; };
-		392396CD25B6550C006B4A1F /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392396CC25B6550C006B4A1F /* Domain.swift */; };
 		392396D525B65519006B4A1F /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392396D425B65519006B4A1F /* Core.swift */; };
 		392396DA25B6560C006B4A1F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392396D925B6560C006B4A1F /* Extensions.swift */; };
 		392396DF25B6561C006B4A1F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392396DE25B6561C006B4A1F /* View.swift */; };
@@ -90,6 +90,8 @@
 		39086E7925E98ECA009DE893 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		39086E8225E9910B009DE893 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		39086E8A25E991A6009DE893 /* XibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibLoadable.swift; sourceTree = "<group>"; };
+		39086E9025E99334009DE893 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		39086E9C25E997D5009DE893 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		391562CE25E91ADA0082B040 /* OAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
 		391562E925E920750082B040 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		391562EA25E920750082B040 /* RootViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
@@ -123,8 +125,6 @@
 		3923968225B65251006B4A1F /* DangChaeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangChaeAppUITests.swift; sourceTree = "<group>"; };
 		3923968425B65251006B4A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		392396BD25B65468006B4A1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		392396C425B654FD006B4A1F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		392396CC25B6550C006B4A1F /* Domain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
 		392396D425B65519006B4A1F /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		392396D925B6560C006B4A1F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		392396DE25B6561C006B4A1F /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -203,6 +203,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		39086E8F25E9931D009DE893 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				39086E9C25E997D5009DE893 /* RemoteDataSource.swift */,
+				39086E9025E99334009DE893 /* HTTPClient.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
 		391562BC25E90FCC0082B040 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,12 +233,12 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		391562F925E9215B0082B040 /* Start */ = {
+		391562F925E9215B0082B040 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
 				391562FA25E9216E0082B040 /* AppComponent.swift */,
 			);
-			path = Start;
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		3915630525E922FE0082B040 /* Signed Out */ = {
@@ -253,7 +262,7 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		3915633025E9370D0082B040 /* OAuthProvider */ = {
+		3915633025E9370D0082B040 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 				3915639E25E94D140082B040 /* AuthProvider.swift */,
@@ -261,14 +270,14 @@
 				3915637F25E9402E0082B040 /* NaverAuth.swift */,
 				3915638425E940360082B040 /* AppleAuth.swift */,
 			);
-			path = OAuthProvider;
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		3915637B25E93EC60082B040 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
 				391563AB25E952BB0082B040 /* Rx */,
-				3915633025E9370D0082B040 /* OAuthProvider */,
+				3915633025E9370D0082B040 /* Auth */,
 				391562CE25E91ADA0082B040 /* OAuth.swift */,
 				391563A625E94D2F0082B040 /* AuthResponse.swift */,
 			);
@@ -369,7 +378,7 @@
 		3923969B25B652BF006B4A1F /* RIBs */ = {
 			isa = PBXGroup;
 			children = (
-				391562F925E9215B0082B040 /* Start */,
+				391562F925E9215B0082B040 /* Launch */,
 				391562E825E9205C0082B040 /* Root */,
 				3915630525E922FE0082B040 /* Signed Out */,
 				39086E6325E98C78009DE893 /* Signed Up */,
@@ -383,7 +392,6 @@
 			isa = PBXGroup;
 			children = (
 				3915637B25E93EC60082B040 /* Authorization */,
-				392396CC25B6550C006B4A1F /* Domain.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -391,7 +399,7 @@
 		3923969D25B652CB006B4A1F /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				392396C425B654FD006B4A1F /* Data.swift */,
+				39086E8F25E9931D009DE893 /* Remote */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -728,12 +736,12 @@
 				3915632925E934570082B040 /* StoryboardBuildable.swift in Sources */,
 				392396DF25B6561C006B4A1F /* View.swift in Sources */,
 				391563C125E97B210082B040 /* ASAuthorizationController+Rx.swift in Sources */,
+				39086E9125E99334009DE893 /* HTTPClient.swift in Sources */,
 				392396D525B65519006B4A1F /* Core.swift in Sources */,
 				3915631325E9246E0082B040 /* SignedOutViewController.swift in Sources */,
 				3923966525B65250006B4A1F /* ViewController.swift in Sources */,
 				39086E7E25E98ECA009DE893 /* HomeInteractor.swift in Sources */,
 				391562FB25E9216E0082B040 /* AppComponent.swift in Sources */,
-				392396CD25B6550C006B4A1F /* Domain.swift in Sources */,
 				3915633225E937620082B040 /* KakaoAuth.swift in Sources */,
 				3915638525E940360082B040 /* AppleAuth.swift in Sources */,
 				391562F225E920750082B040 /* RootInteractor.swift in Sources */,
@@ -742,7 +750,6 @@
 				391562EE25E920750082B040 /* RootRouter.swift in Sources */,
 				39086E7A25E98ECA009DE893 /* HomeRouter.swift in Sources */,
 				3923966125B65250006B4A1F /* AppDelegate.swift in Sources */,
-				392396C525B654FD006B4A1F /* Data.swift in Sources */,
 				39086E6C25E98CA4009DE893 /* SignedUpBuilder.swift in Sources */,
 				3915638025E9402E0082B040 /* NaverAuth.swift in Sources */,
 				3915631125E9246E0082B040 /* SignedOutRouter.swift in Sources */,
@@ -750,6 +757,7 @@
 				391562CF25E91ADA0082B040 /* OAuth.swift in Sources */,
 				39086E7C25E98ECA009DE893 /* HomeViewController.swift in Sources */,
 				391563A725E94D2F0082B040 /* AuthResponse.swift in Sources */,
+				39086E9D25E997D5009DE893 /* RemoteDataSource.swift in Sources */,
 				392396DA25B6560C006B4A1F /* Extensions.swift in Sources */,
 				39086E7D25E98ECA009DE893 /* HomeBuilder.swift in Sources */,
 				39086E6925E98CA4009DE893 /* SignedUpRouter.swift in Sources */,
