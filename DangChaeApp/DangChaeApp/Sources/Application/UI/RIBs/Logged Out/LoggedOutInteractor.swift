@@ -29,6 +29,8 @@ final class LoggedOutInteractor:
   weak var router: LoggedOutRouting?
   weak var listener: LoggedOutListener?
   
+  private var disposeBag = DisposeBag()
+  
   // MARK: 🏁 Initialization
   override init(presenter: LoggedOutPresentable) {
     super.init(presenter: presenter)
@@ -45,12 +47,14 @@ final class LoggedOutInteractor:
     // TODO: Pause any business logic.
   }
   
-}
-extension LoggedOutPresentableListener {
-  
   func signIn(with provider: AuthProvider?) {
     guard let provider = provider else { return }
-    print("\(provider)로 로그인")
-  }
-  
+    
+    Auth.of(provider)
+      .authorize()
+      .subscribe(onNext: { response in
+        print(response.provider)
+        print(response.accessToken)
+      })
+      .disposed(by: disposeBag)  }
 }

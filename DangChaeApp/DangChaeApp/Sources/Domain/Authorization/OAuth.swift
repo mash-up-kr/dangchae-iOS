@@ -22,3 +22,13 @@ struct AuthResponse {
 protocol OAuth {
   func authorize() -> Observable<AuthResponse>
 }
+
+enum Auth {
+  static func of(_ provider: AuthProvider) -> OAuth {
+    switch provider {
+    case .kakao: return KakaoAuth()
+    case .naver: return NaverAuth()
+    case .apple: return AppleAuth()
+    }
+  }
+}

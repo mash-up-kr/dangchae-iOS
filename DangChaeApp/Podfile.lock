@@ -1,86 +1,79 @@
 PODS:
+  - Alamofire (5.4.1)
   - CGFloatLiteral (0.5.0)
-  - PINCache (3.0.3):
-    - PINCache/Arc-exception-safe (= 3.0.3)
-    - PINCache/Core (= 3.0.3)
-  - PINCache/Arc-exception-safe (3.0.3):
-    - PINCache/Core
-  - PINCache/Core (3.0.3):
-    - PINOperation (~> 1.2.1)
-  - PINOperation (1.2.1)
-  - PINRemoteImage/Core (3.0.3):
-    - PINOperation
-  - PINRemoteImage/iOS (3.0.3):
-    - PINRemoteImage/Core
-  - PINRemoteImage/PINCache (3.0.3):
-    - PINCache (~> 3.0.3)
-    - PINRemoteImage/Core
-  - ReusableKit (3.0.0):
-    - ReusableKit/Core (= 3.0.0)
-  - ReusableKit/Core (3.0.0)
+  - FLEX (4.4.0)
+  - KakaoSDKAuth (2.3.2):
+    - KakaoSDKCommon (= 2.3.2)
+  - KakaoSDKCommon (2.3.2):
+    - Alamofire (~> 5.1)
+  - KakaoSDKUser (2.3.2):
+    - KakaoSDKAuth (= 2.3.2)
+    - KakaoSDKCommon (= 2.3.2)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - naveridlogin-sdk-ios (4.1.3)
   - RIBs (0.9.1):
     - RxSwift (~> 4.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
   - RxSwift (4.5.0)
+  - SnapKit (5.0.1)
   - SwiftRichString (3.7.2)
   - Swinject (2.7.1)
-  - Texture (3.0.0):
-    - Texture/AssetsLibrary (= 3.0.0)
-    - Texture/Core (= 3.0.0)
-    - Texture/MapKit (= 3.0.0)
-    - Texture/Photos (= 3.0.0)
-    - Texture/PINRemoteImage (= 3.0.0)
-    - Texture/Video (= 3.0.0)
-  - Texture/AssetsLibrary (3.0.0):
-    - Texture/Core
-  - Texture/Core (3.0.0)
-  - Texture/MapKit (3.0.0):
-    - Texture/Core
-  - Texture/Photos (3.0.0):
-    - Texture/Core
-  - Texture/PINRemoteImage (3.0.0):
-    - PINRemoteImage/iOS (~> 3.0.0)
-    - PINRemoteImage/PINCache
-    - Texture/Core
-  - Texture/Video (3.0.0):
-    - Texture/Core
   - Then (2.7.0)
 
 DEPENDENCIES:
   - CGFloatLiteral
-  - ReusableKit
+  - FLEX
+  - KakaoSDKAuth
+  - KakaoSDKUser
+  - Moya
+  - naveridlogin-sdk-ios
   - RIBs
+  - RxCocoa
+  - RxSwift
+  - SnapKit
   - SwiftRichString
   - Swinject
-  - Texture
   - Then
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - CGFloatLiteral
-    - PINCache
-    - PINOperation
-    - PINRemoteImage
-    - ReusableKit
+    - FLEX
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKUser
+    - Moya
+    - naveridlogin-sdk-ios
     - RIBs
+    - RxCocoa
     - RxSwift
+    - SnapKit
     - SwiftRichString
     - Swinject
-    - Texture
     - Then
 
 SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   CGFloatLiteral: 0328648f666e3cb2263d5ee3972df9d320786d25
-  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
-  PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
-  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
-  ReusableKit: e5f853ad4652e411f96b6119b2488afa12929be6
+  FLEX: 0592c011c6dfbfdb94a5e24f2d4a9dbff0c6026d
+  KakaoSDKAuth: 8db7c7a0561b137477bb984bbdab2eeda7745d23
+  KakaoSDKCommon: 4bb3981337921686948b7be094590f2edec5df87
+  KakaoSDKUser: e6c0017a41e87a94bdcd873d0178ad75be8126d4
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  naveridlogin-sdk-ios: b9d7c20677981177ed994ecb1c8c2b49f223277d
   RIBs: 879184fbca567425c488d6b3d14a9c5abfbf9d47
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftRichString: d61b807db1f8834c26fee92b6dd3e1be2dc5af03
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
-  Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: efe3274d05aa7280d72ee80e8a7e5214e737da34
+PODFILE CHECKSUM: 420974edece36aa6d43d987c2ce99112d3c536f7
 
-COCOAPODS: 1.10.0.rc.1
+COCOAPODS: 1.10.1

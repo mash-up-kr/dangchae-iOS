@@ -22,6 +22,9 @@
 		3915631525E9246E0082B040 /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915631025E9246E0082B040 /* LoggedOutInteractor.swift */; };
 		3915631E25E9278F0082B040 /* View+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915631D25E9278F0082B040 /* View+IB.swift */; };
 		3915632925E934570082B040 /* StoryboardBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915632825E934570082B040 /* StoryboardBuildable.swift */; };
+		3915633225E937620082B040 /* KakaoAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915633125E937620082B040 /* KakaoAuth.swift */; };
+		3915638025E9402E0082B040 /* NaverAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915637F25E9402E0082B040 /* NaverAuth.swift */; };
+		3915638525E940360082B040 /* AppleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915638425E940360082B040 /* AppleAuth.swift */; };
 		3923966125B65250006B4A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923966025B65250006B4A1F /* AppDelegate.swift */; };
 		3923966525B65250006B4A1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923966425B65250006B4A1F /* ViewController.swift */; };
 		3923966825B65250006B4A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3923966625B65250006B4A1F /* Main.storyboard */; };
@@ -71,6 +74,9 @@
 		3915631025E9246E0082B040 /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
 		3915631D25E9278F0082B040 /* View+IB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+IB.swift"; sourceTree = "<group>"; };
 		3915632825E934570082B040 /* StoryboardBuildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBuildable.swift; sourceTree = "<group>"; };
+		3915633125E937620082B040 /* KakaoAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuth.swift; sourceTree = "<group>"; };
+		3915637F25E9402E0082B040 /* NaverAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverAuth.swift; sourceTree = "<group>"; };
+		3915638425E940360082B040 /* AppleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuth.swift; sourceTree = "<group>"; };
 		3923965D25B65250006B4A1F /* DangChaeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangChaeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3923966025B65250006B4A1F /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
 		3923966425B65250006B4A1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,14 +155,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		391562C125E915DF0082B040 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				391562CE25E91ADA0082B040 /* OAuth.swift */,
-			);
-			path = Interfaces;
-			sourceTree = "<group>";
-		};
 		391562E825E9205C0082B040 /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +193,25 @@
 				3915631D25E9278F0082B040 /* View+IB.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3915633025E9370D0082B040 /* OAuthProvider */ = {
+			isa = PBXGroup;
+			children = (
+				3915633125E937620082B040 /* KakaoAuth.swift */,
+				3915637F25E9402E0082B040 /* NaverAuth.swift */,
+				3915638425E940360082B040 /* AppleAuth.swift */,
+			);
+			path = OAuthProvider;
+			sourceTree = "<group>";
+		};
+		3915637B25E93EC60082B040 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				3915633025E9370D0082B040 /* OAuthProvider */,
+				391562CE25E91ADA0082B040 /* OAuth.swift */,
+			);
+			path = Authorization;
 			sourceTree = "<group>";
 		};
 		3923965425B65250006B4A1F = {
@@ -291,7 +308,7 @@
 		3923969C25B652C6006B4A1F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				391562C125E915DF0082B040 /* Interfaces */,
+				3915637B25E93EC60082B040 /* Authorization */,
 				392396CC25B6550C006B4A1F /* Domain.swift */,
 			);
 			path = Domain;
@@ -635,10 +652,13 @@
 				3923966525B65250006B4A1F /* ViewController.swift in Sources */,
 				391562FB25E9216E0082B040 /* AppComponent.swift in Sources */,
 				392396CD25B6550C006B4A1F /* Domain.swift in Sources */,
+				3915633225E937620082B040 /* KakaoAuth.swift in Sources */,
+				3915638525E940360082B040 /* AppleAuth.swift in Sources */,
 				391562F225E920750082B040 /* RootInteractor.swift in Sources */,
 				391562EE25E920750082B040 /* RootRouter.swift in Sources */,
 				3923966125B65250006B4A1F /* AppDelegate.swift in Sources */,
 				392396C525B654FD006B4A1F /* Data.swift in Sources */,
+				3915638025E9402E0082B040 /* NaverAuth.swift in Sources */,
 				3915631125E9246E0082B040 /* LoggedOutRouter.swift in Sources */,
 				3915631E25E9278F0082B040 /* View+IB.swift in Sources */,
 				391562CF25E91ADA0082B040 /* OAuth.swift in Sources */,

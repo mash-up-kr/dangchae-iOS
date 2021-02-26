@@ -7,6 +7,7 @@
 
 import UIKit
 import RIBs
+import Then
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     configureRIBs()
+    configureNaverAuth()
     return true
   }
   
@@ -29,5 +31,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.launchRouter = rootRouter
     rootRouter.launchFromWindow(window)
   }
+  
+  func application(
+    _ app: UIApplication,
+    open url: URL,
+    options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+  ) -> Bool {
+    return handleKakaoURL(with: url)
+  }
+  
 }
 
+import NaverThirdPartyLogin
+extension AppDelegate {
+  private func configureNaverAuth() {
+    NaverThirdPartyLoginConnection.getSharedInstance().do {
+      $0.serviceUrlScheme = kServiceAppUrlScheme
+      $0.consumerKey = kConsumerKey
+      $0.consumerSecret = kConsumerSecret
+      $0.appName = kServiceAppName
+    }
+  }
+}
+
+import KakaoSDKAuth
+extension AppDelegate {
+  private func handleKakaoURL(with url: URL) -> Bool {
+    guard AuthApi.isKakaoTalkLoginUrl(url) else { return false }
+    return AuthController.handleOpenUrl(url: url)
+  }
+}

@@ -14,12 +14,15 @@ target 'DangChaeApp' do
   pod 'SnapKit'
   # pod 'Texture'
   
+  # ⌛️ Async Stream
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  
   # 🌐 Network
   pod 'Moya'
-  pod 'Moya/RxSwift'
   
   # 💉 Dependency Injection
-  # pod 'Swinject'
+  pod 'Swinject'
   
   # 🎨 Code Quality
   pod 'Then'
@@ -34,7 +37,8 @@ target 'DangChaeApp' do
   
   # 🔐 Auth
   pod 'naveridlogin-sdk-ios'
-  pod 'RxKakaoSDKAuth'
+  pod 'KakaoSDKAuth'
+  pod 'KakaoSDKUser'
   
   target 'DangChaeAppTests' do
     inherit! :search_paths

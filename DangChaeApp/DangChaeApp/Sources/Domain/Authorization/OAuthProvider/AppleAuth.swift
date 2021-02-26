@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import RxSwift
+import KakaoSDKAuth
+
+final class AppleAuth: OAuth {
+  func authorize() -> Observable<AuthResponse> {
+    return .empty()
+  }
+}

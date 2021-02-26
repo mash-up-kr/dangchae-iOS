@@ -20,9 +20,11 @@ final class LoggedOutRouter:
   ViewableRouter<LoggedOutInteractable, LoggedOutViewControllable>,
   LoggedOutRouting
 {
-  
   // MARK: 🏁 Initialization
-  override init(interactor: LoggedOutInteractable, viewController: LoggedOutViewControllable) {
+  override init(
+    interactor: LoggedOutInteractable,
+    viewController: LoggedOutViewControllable
+  ) {
     super.init(interactor: interactor, viewController: viewController)
     interactor.router = self
   }
