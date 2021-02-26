@@ -3,12 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		349718A0DC725519E2BF10DF /* Pods_DangChaeApp_DangChaeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5127D22AE0DBB297573C37CC /* Pods_DangChaeApp_DangChaeAppUITests.framework */; };
+		391562CF25E91ADA0082B040 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391562CE25E91ADA0082B040 /* OAuth.swift */; };
+		391562EE25E920750082B040 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391562E925E920750082B040 /* RootRouter.swift */; };
+		391562EF25E920750082B040 /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391562EA25E920750082B040 /* RootViewController.storyboard */; };
+		391562F025E920750082B040 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391562EB25E920750082B040 /* RootViewController.swift */; };
+		391562F125E920750082B040 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391562EC25E920750082B040 /* RootBuilder.swift */; };
+		391562F225E920750082B040 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391562ED25E920750082B040 /* RootInteractor.swift */; };
+		391562FB25E9216E0082B040 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391562FA25E9216E0082B040 /* AppComponent.swift */; };
+		3915631125E9246E0082B040 /* LoggedOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915630C25E9246E0082B040 /* LoggedOutRouter.swift */; };
+		3915631225E9246E0082B040 /* LoggedOutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3915630D25E9246E0082B040 /* LoggedOutViewController.storyboard */; };
+		3915631325E9246E0082B040 /* LoggedOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915630E25E9246E0082B040 /* LoggedOutViewController.swift */; };
+		3915631425E9246E0082B040 /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915630F25E9246E0082B040 /* LoggedOutBuilder.swift */; };
+		3915631525E9246E0082B040 /* LoggedOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915631025E9246E0082B040 /* LoggedOutInteractor.swift */; };
+		3915631E25E9278F0082B040 /* View+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915631D25E9278F0082B040 /* View+IB.swift */; };
+		3915632925E934570082B040 /* StoryboardBuildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915632825E934570082B040 /* StoryboardBuildable.swift */; };
+		3915633225E937620082B040 /* KakaoAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915633125E937620082B040 /* KakaoAuth.swift */; };
+		3915638025E9402E0082B040 /* NaverAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915637F25E9402E0082B040 /* NaverAuth.swift */; };
+		3915638525E940360082B040 /* AppleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915638425E940360082B040 /* AppleAuth.swift */; };
+		3915639F25E94D140082B040 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915639E25E94D140082B040 /* AuthProvider.swift */; };
+		391563A725E94D2F0082B040 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391563A625E94D2F0082B040 /* AuthResponse.swift */; };
+		391563AD25E952D20082B040 /* NaverThirdPartyLoginConnection+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391563AC25E952D20082B040 /* NaverThirdPartyLoginConnection+Rx.swift */; };
+		391563C125E97B210082B040 /* ASAuthorizationController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391563C025E97B200082B040 /* ASAuthorizationController+Rx.swift */; };
 		3923966125B65250006B4A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923966025B65250006B4A1F /* AppDelegate.swift */; };
-		3923966325B65250006B4A1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923966225B65250006B4A1F /* SceneDelegate.swift */; };
 		3923966525B65250006B4A1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923966425B65250006B4A1F /* ViewController.swift */; };
 		3923966825B65250006B4A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3923966625B65250006B4A1F /* Main.storyboard */; };
 		3923966D25B65251006B4A1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3923966B25B65251006B4A1F /* LaunchScreen.storyboard */; };
@@ -20,6 +41,8 @@
 		392396D525B65519006B4A1F /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392396D425B65519006B4A1F /* Core.swift */; };
 		392396DA25B6560C006B4A1F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392396D925B6560C006B4A1F /* Extensions.swift */; };
 		392396DF25B6561C006B4A1F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392396DE25B6561C006B4A1F /* View.swift */; };
+		3C6D5863FD6FC12671F7D138 /* Pods_DangChaeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619C0CEC98702ACBA8A9E40C /* Pods_DangChaeAppTests.framework */; };
+		5976E6D6683761EE95FD18CF /* Pods_DangChaeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1288B686A2217E73F573F16 /* Pods_DangChaeApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +63,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AC4604AD49CFE0E2D468EC1 /* Pods-DangChaeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DangChaeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DangChaeAppTests/Pods-DangChaeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		39086E3525E98767009DE893 /* DangChaeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DangChaeApp.entitlements; sourceTree = "<group>"; };
+		391562CE25E91ADA0082B040 /* OAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
+		391562E925E920750082B040 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		391562EA25E920750082B040 /* RootViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootViewController.storyboard; sourceTree = "<group>"; };
+		391562EB25E920750082B040 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		391562EC25E920750082B040 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		391562ED25E920750082B040 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		391562FA25E9216E0082B040 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		3915630C25E9246E0082B040 /* LoggedOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutRouter.swift; sourceTree = "<group>"; };
+		3915630D25E9246E0082B040 /* LoggedOutViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggedOutViewController.storyboard; sourceTree = "<group>"; };
+		3915630E25E9246E0082B040 /* LoggedOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutViewController.swift; sourceTree = "<group>"; };
+		3915630F25E9246E0082B040 /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
+		3915631025E9246E0082B040 /* LoggedOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutInteractor.swift; sourceTree = "<group>"; };
+		3915631D25E9278F0082B040 /* View+IB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+IB.swift"; sourceTree = "<group>"; };
+		3915632825E934570082B040 /* StoryboardBuildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardBuildable.swift; sourceTree = "<group>"; };
+		3915633125E937620082B040 /* KakaoAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuth.swift; sourceTree = "<group>"; };
+		3915637F25E9402E0082B040 /* NaverAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverAuth.swift; sourceTree = "<group>"; };
+		3915638425E940360082B040 /* AppleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuth.swift; sourceTree = "<group>"; };
+		3915639E25E94D140082B040 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		391563A625E94D2F0082B040 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		391563AC25E952D20082B040 /* NaverThirdPartyLoginConnection+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NaverThirdPartyLoginConnection+Rx.swift"; sourceTree = "<group>"; };
+		391563C025E97B200082B040 /* ASAuthorizationController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASAuthorizationController+Rx.swift"; sourceTree = "<group>"; };
 		3923965D25B65250006B4A1F /* DangChaeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangChaeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3923966025B65250006B4A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3923966225B65250006B4A1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3923966025B65250006B4A1F /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
 		3923966425B65250006B4A1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3923966725B65250006B4A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3923966C25B65251006B4A1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +104,14 @@
 		392396D425B65519006B4A1F /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		392396D925B6560C006B4A1F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		392396DE25B6561C006B4A1F /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		5127D22AE0DBB297573C37CC /* Pods_DangChaeApp_DangChaeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DangChaeApp_DangChaeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		619C0CEC98702ACBA8A9E40C /* Pods_DangChaeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DangChaeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A6101E41852671D43010BA5 /* Pods-DangChaeApp-DangChaeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DangChaeApp-DangChaeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DangChaeApp-DangChaeAppUITests/Pods-DangChaeApp-DangChaeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F123413C2F95398740DD0B3 /* Pods-DangChaeApp-DangChaeAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DangChaeApp-DangChaeAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DangChaeApp-DangChaeAppUITests/Pods-DangChaeApp-DangChaeAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A3523C2DC31CBA8FDCD76C8 /* Pods-DangChaeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DangChaeAppTests.release.xcconfig"; path = "Target Support Files/Pods-DangChaeAppTests/Pods-DangChaeAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8DE4E0E965C0364D353DE3AF /* Pods-DangChaeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DangChaeApp.debug.xcconfig"; path = "Target Support Files/Pods-DangChaeApp/Pods-DangChaeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C1288B686A2217E73F573F16 /* Pods_DangChaeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DangChaeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3682E8C2B26911028D869A /* Pods-DangChaeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DangChaeApp.release.xcconfig"; path = "Target Support Files/Pods-DangChaeApp/Pods-DangChaeApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5976E6D6683761EE95FD18CF /* Pods_DangChaeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C6D5863FD6FC12671F7D138 /* Pods_DangChaeAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +135,106 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349718A0DC725519E2BF10DF /* Pods_DangChaeApp_DangChaeAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		150BE1FEB7EA791591C15FC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DE4E0E965C0364D353DE3AF /* Pods-DangChaeApp.debug.xcconfig */,
+				FC3682E8C2B26911028D869A /* Pods-DangChaeApp.release.xcconfig */,
+				7F123413C2F95398740DD0B3 /* Pods-DangChaeApp-DangChaeAppUITests.debug.xcconfig */,
+				7A6101E41852671D43010BA5 /* Pods-DangChaeApp-DangChaeAppUITests.release.xcconfig */,
+				2AC4604AD49CFE0E2D468EC1 /* Pods-DangChaeAppTests.debug.xcconfig */,
+				8A3523C2DC31CBA8FDCD76C8 /* Pods-DangChaeAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		391562BC25E90FCC0082B040 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				392396DE25B6561C006B4A1F /* View.swift */,
+				3923966425B65250006B4A1F /* ViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		391562E825E9205C0082B040 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				391562E925E920750082B040 /* RootRouter.swift */,
+				391562EA25E920750082B040 /* RootViewController.storyboard */,
+				391562EB25E920750082B040 /* RootViewController.swift */,
+				391562EC25E920750082B040 /* RootBuilder.swift */,
+				391562ED25E920750082B040 /* RootInteractor.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		391562F925E9215B0082B040 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				391562FA25E9216E0082B040 /* AppComponent.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		3915630525E922FE0082B040 /* Logged Out */ = {
+			isa = PBXGroup;
+			children = (
+				3915630C25E9246E0082B040 /* LoggedOutRouter.swift */,
+				3915630D25E9246E0082B040 /* LoggedOutViewController.storyboard */,
+				3915630E25E9246E0082B040 /* LoggedOutViewController.swift */,
+				3915630F25E9246E0082B040 /* LoggedOutBuilder.swift */,
+				3915631025E9246E0082B040 /* LoggedOutInteractor.swift */,
+			);
+			path = "Logged Out";
+			sourceTree = "<group>";
+		};
+		3915631C25E9277C0082B040 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3915631D25E9278F0082B040 /* View+IB.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3915633025E9370D0082B040 /* OAuthProvider */ = {
+			isa = PBXGroup;
+			children = (
+				3915639E25E94D140082B040 /* AuthProvider.swift */,
+				3915633125E937620082B040 /* KakaoAuth.swift */,
+				3915637F25E9402E0082B040 /* NaverAuth.swift */,
+				3915638425E940360082B040 /* AppleAuth.swift */,
+			);
+			path = OAuthProvider;
+			sourceTree = "<group>";
+		};
+		3915637B25E93EC60082B040 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				391563AB25E952BB0082B040 /* Rx */,
+				3915633025E9370D0082B040 /* OAuthProvider */,
+				391562CE25E91ADA0082B040 /* OAuth.swift */,
+				391563A625E94D2F0082B040 /* AuthResponse.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		391563AB25E952BB0082B040 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				391563AC25E952D20082B040 /* NaverThirdPartyLoginConnection+Rx.swift */,
+				391563C025E97B200082B040 /* ASAuthorizationController+Rx.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
 		3923965425B65250006B4A1F = {
 			isa = PBXGroup;
 			children = (
@@ -93,8 +242,12 @@
 				3923967625B65251006B4A1F /* DangChaeAppTests */,
 				3923968125B65251006B4A1F /* DangChaeAppUITests */,
 				3923965E25B65250006B4A1F /* Products */,
+				150BE1FEB7EA791591C15FC5 /* Pods */,
+				F7C16BD454E48ADE02CF4981 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		3923965E25B65250006B4A1F /* Products */ = {
 			isa = PBXGroup;
@@ -109,6 +262,7 @@
 		3923965F25B65250006B4A1F /* DangChaeApp */ = {
 			isa = PBXGroup;
 			children = (
+				39086E3525E98767009DE893 /* DangChaeApp.entitlements */,
 				3923969825B6529D006B4A1F /* Sources */,
 				3923969925B652A2006B4A1F /* Resources */,
 				3923969A25B652A9006B4A1F /* Support Files */,
@@ -162,17 +316,21 @@
 			path = "Support Files";
 			sourceTree = "<group>";
 		};
-		3923969B25B652BF006B4A1F /* Scenes */ = {
+		3923969B25B652BF006B4A1F /* RIBs */ = {
 			isa = PBXGroup;
 			children = (
+				391562F925E9215B0082B040 /* Start */,
+				391562E825E9205C0082B040 /* Root */,
+				3915630525E922FE0082B040 /* Logged Out */,
 				3923969F25B652F3006B4A1F /* Main */,
 			);
-			path = Scenes;
+			path = RIBs;
 			sourceTree = "<group>";
 		};
 		3923969C25B652C6006B4A1F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3915637B25E93EC60082B040 /* Authorization */,
 				392396CC25B6550C006B4A1F /* Domain.swift */,
 			);
 			path = Domain;
@@ -189,8 +347,11 @@
 		3923969E25B652CF006B4A1F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3915631C25E9277C0082B040 /* Extensions */,
+				391562BC25E90FCC0082B040 /* Base */,
 				392396B225B653EF006B4A1F /* Views */,
-				3923969B25B652BF006B4A1F /* Scenes */,
+				3923969B25B652BF006B4A1F /* RIBs */,
+				3915632825E934570082B040 /* StoryboardBuildable.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -198,7 +359,6 @@
 		3923969F25B652F3006B4A1F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				3923966425B65250006B4A1F /* ViewController.swift */,
 				3923966625B65250006B4A1F /* Main.storyboard */,
 			);
 			path = Main;
@@ -226,7 +386,6 @@
 			isa = PBXGroup;
 			children = (
 				3923966025B65250006B4A1F /* AppDelegate.swift */,
-				3923966225B65250006B4A1F /* SceneDelegate.swift */,
 			);
 			path = "Entry Point";
 			sourceTree = "<group>";
@@ -234,7 +393,6 @@
 		392396B225B653EF006B4A1F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				392396DE25B6561C006B4A1F /* View.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,6 +413,16 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F7C16BD454E48ADE02CF4981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1288B686A2217E73F573F16 /* Pods_DangChaeApp.framework */,
+				5127D22AE0DBB297573C37CC /* Pods_DangChaeApp_DangChaeAppUITests.framework */,
+				619C0CEC98702ACBA8A9E40C /* Pods_DangChaeAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,9 +430,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3923968725B65251006B4A1F /* Build configuration list for PBXNativeTarget "DangChaeApp" */;
 			buildPhases = (
+				41A8A138E08E71406CC788E0 /* [CP] Check Pods Manifest.lock */,
 				3923965925B65250006B4A1F /* Sources */,
 				3923965A25B65250006B4A1F /* Frameworks */,
 				3923965B25B65250006B4A1F /* Resources */,
+				D6E2604D6C054B3F82B8FCA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,6 +449,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3923968A25B65251006B4A1F /* Build configuration list for PBXNativeTarget "DangChaeAppTests" */;
 			buildPhases = (
+				B66B8DF69F56FA818C2E0A45 /* [CP] Check Pods Manifest.lock */,
 				3923966F25B65251006B4A1F /* Sources */,
 				3923967025B65251006B4A1F /* Frameworks */,
 				3923967125B65251006B4A1F /* Resources */,
@@ -297,9 +468,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3923968D25B65251006B4A1F /* Build configuration list for PBXNativeTarget "DangChaeAppUITests" */;
 			buildPhases = (
+				D1602F8964434E704971EB1C /* [CP] Check Pods Manifest.lock */,
 				3923967A25B65251006B4A1F /* Sources */,
 				3923967B25B65251006B4A1F /* Frameworks */,
 				3923967C25B65251006B4A1F /* Resources */,
+				2EF49B9BEBAF1403E330DF6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -361,6 +534,8 @@
 				3923966D25B65251006B4A1F /* LaunchScreen.storyboard in Resources */,
 				392396BE25B65468006B4A1F /* Assets.xcassets in Resources */,
 				3923966825B65250006B4A1F /* Main.storyboard in Resources */,
+				391562EF25E920750082B040 /* RootViewController.storyboard in Resources */,
+				3915631225E9246E0082B040 /* LoggedOutViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,18 +555,139 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EF49B9BEBAF1403E330DF6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DangChaeApp-DangChaeAppUITests/Pods-DangChaeApp-DangChaeAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DangChaeApp-DangChaeAppUITests/Pods-DangChaeApp-DangChaeAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DangChaeApp-DangChaeAppUITests/Pods-DangChaeApp-DangChaeAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41A8A138E08E71406CC788E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DangChaeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B66B8DF69F56FA818C2E0A45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DangChaeAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1602F8964434E704971EB1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DangChaeApp-DangChaeAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6E2604D6C054B3F82B8FCA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DangChaeApp/Pods-DangChaeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DangChaeApp/Pods-DangChaeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DangChaeApp/Pods-DangChaeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3923965925B65250006B4A1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				391562F125E920750082B040 /* RootBuilder.swift in Sources */,
+				391562F025E920750082B040 /* RootViewController.swift in Sources */,
+				3915631525E9246E0082B040 /* LoggedOutInteractor.swift in Sources */,
+				391563AD25E952D20082B040 /* NaverThirdPartyLoginConnection+Rx.swift in Sources */,
+				3915631425E9246E0082B040 /* LoggedOutBuilder.swift in Sources */,
+				3915632925E934570082B040 /* StoryboardBuildable.swift in Sources */,
 				392396DF25B6561C006B4A1F /* View.swift in Sources */,
+				391563C125E97B210082B040 /* ASAuthorizationController+Rx.swift in Sources */,
 				392396D525B65519006B4A1F /* Core.swift in Sources */,
+				3915631325E9246E0082B040 /* LoggedOutViewController.swift in Sources */,
 				3923966525B65250006B4A1F /* ViewController.swift in Sources */,
+				391562FB25E9216E0082B040 /* AppComponent.swift in Sources */,
 				392396CD25B6550C006B4A1F /* Domain.swift in Sources */,
+				3915633225E937620082B040 /* KakaoAuth.swift in Sources */,
+				3915638525E940360082B040 /* AppleAuth.swift in Sources */,
+				391562F225E920750082B040 /* RootInteractor.swift in Sources */,
+				3915639F25E94D140082B040 /* AuthProvider.swift in Sources */,
+				391562EE25E920750082B040 /* RootRouter.swift in Sources */,
 				3923966125B65250006B4A1F /* AppDelegate.swift in Sources */,
-				3923966325B65250006B4A1F /* SceneDelegate.swift in Sources */,
 				392396C525B654FD006B4A1F /* Data.swift in Sources */,
+				3915638025E9402E0082B040 /* NaverAuth.swift in Sources */,
+				3915631125E9246E0082B040 /* LoggedOutRouter.swift in Sources */,
+				3915631E25E9278F0082B040 /* View+IB.swift in Sources */,
+				391562CF25E91ADA0082B040 /* OAuth.swift in Sources */,
+				391563A725E94D2F0082B040 /* AuthResponse.swift in Sources */,
 				392396DA25B6560C006B4A1F /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,18 +861,21 @@
 		};
 		3923968825B65251006B4A1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE4E0E965C0364D353DE3AF /* Pods-DangChaeApp.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = DangChaeApp/DangChaeApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8BQHKQSA4Y;
 				INFOPLIST_FILE = "DangChaeApp/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DangChae.DangChaeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dangchae.udada;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Udada Provisioning Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -584,18 +883,21 @@
 		};
 		3923968925B65251006B4A1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC3682E8C2B26911028D869A /* Pods-DangChaeApp.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = DangChaeApp/DangChaeApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 8BQHKQSA4Y;
 				INFOPLIST_FILE = "DangChaeApp/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DangChae.DangChaeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dangchae.udada;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Udada Provisioning Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -603,6 +905,7 @@
 		};
 		3923968B25B65251006B4A1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC4604AD49CFE0E2D468EC1 /* Pods-DangChaeAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -625,6 +928,7 @@
 		};
 		3923968C25B65251006B4A1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A3523C2DC31CBA8FDCD76C8 /* Pods-DangChaeAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -647,6 +951,7 @@
 		};
 		3923968E25B65251006B4A1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F123413C2F95398740DD0B3 /* Pods-DangChaeApp-DangChaeAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -667,6 +972,7 @@
 		};
 		3923968F25B65251006B4A1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A6101E41852671D43010BA5 /* Pods-DangChaeApp-DangChaeAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

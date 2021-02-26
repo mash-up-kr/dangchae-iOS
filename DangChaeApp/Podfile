@@ -1,0 +1,52 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DangChaeApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  # 🏛 Architecture
+  pod 'RIBs'
+  
+  # 🖼 UI
+  # pod 'ReusableKit'
+  
+  # 📐 Layout
+  pod 'SnapKit'
+  # pod 'Texture'
+  
+  # ⌛️ Async Stream
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  
+  # 🌐 Network
+  pod 'Moya'
+  
+  # 💉 Dependency Injection
+  pod 'Swinject'
+  
+  # 🎨 Code Quality
+  pod 'Then'
+  pod 'CGFloatLiteral'
+  pod 'SwiftRichString'
+  
+  # 🐛 Debug
+  pod 'FLEX', :configurations => ['Debug']
+  
+  # 🎸 Misc
+  # pod 'lottie-ios'
+  
+  # 🔐 Auth
+  pod 'naveridlogin-sdk-ios'
+  pod 'KakaoSDKAuth'
+  pod 'KakaoSDKUser'
+  
+  target 'DangChaeAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  
+  target 'DangChaeAppUITests' do
+    # Pods for testing
+  end
+  
+end

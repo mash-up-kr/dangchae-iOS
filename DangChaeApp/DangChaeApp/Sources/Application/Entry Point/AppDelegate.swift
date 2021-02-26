@@ -6,27 +6,70 @@
 //
 
 import UIKit
+import RIBs
+import Then
+import KakaoSDKAuth
+import NaverThirdPartyLogin
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
+final class AppDelegate: UIResponder, UIApplicationDelegate {
+  var window: UIWindow?
+  private var launchRouter: LaunchRouting?
+  
+  func application(
+    _ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+  ) -> Bool {
+    configureRIBs()
+    configureNaverAuth()
+    return true
+  }
+  
+  func application(
+    _ app: UIApplication,
+    open url: URL,
+    options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+  ) -> Bool {
+    //    let needsOpenURL = handleKakaoURL(with: url) ||
+    print(url)
+    return handleNaverURL(app, open: url, options: options)
+    //    return needsOpenURL
+  }
+  
 }
 
+// MARK: Configuration
+extension AppDelegate {
+  private func configureRIBs() {
+    let window = UIWindow()
+    self.window = window
+    let rootRouter = RootBuilder(dependency: AppComponent()).build()
+    self.launchRouter = rootRouter
+    rootRouter.launchFromWindow(window)
+  }
+  
+  private func configureNaverAuth() {
+    NaverThirdPartyLoginConnection.getSharedInstance().do {
+      $0.serviceUrlScheme = kServiceAppUrlScheme
+      $0.consumerKey = kConsumerKey
+      $0.consumerSecret = kConsumerSecret
+      $0.appName = kServiceAppName
+      $0.isInAppOauthEnable = true
+      $0.isNaverAppOauthEnable = true
+    }
+  }
+  
+  private func handleKakaoURL(with url: URL) -> Bool {
+    guard AuthApi.isKakaoTalkLoginUrl(url) else { return false }
+    return AuthController.handleOpenUrl(url: url)
+  }
+  
+  private func handleNaverURL(
+    _ app: UIApplication,
+    open url: URL,
+    options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+  ) -> Bool {
+    guard let naverLogin = NaverThirdPartyLoginConnection.getSharedInstance() else { return false }
+    return naverLogin.application(app, open: url, options: options)
+  }
+}
