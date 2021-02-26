@@ -36,7 +36,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="loginButtonDidTap:" destination="vKn-9P-Ny8" eventType="touchUpInside" id="nHX-cu-c7D"/>
+                                            <action selector="signInButtonDidTap:" destination="vKn-9P-Ny8" eventType="touchUpInside" id="35l-fZ-6b3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNM-cr-WSx">
@@ -56,7 +56,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="loginButtonDidTap:" destination="vKn-9P-Ny8" eventType="touchUpInside" id="u0I-pB-aXu"/>
+                                            <action selector="signInButtonDidTap:" destination="vKn-9P-Ny8" eventType="touchUpInside" id="wWl-8E-i7z"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4s-AN-xD2">
@@ -76,7 +76,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="loginButtonDidTap:" destination="vKn-9P-Ny8" eventType="touchUpInside" id="6dW-WD-f0O"/>
+                                            <action selector="signInButtonDidTap:" destination="vKn-9P-Ny8" eventType="touchUpInside" id="1dV-cO-a0A"/>
                                         </connections>
                                     </button>
                                 </subviews>
