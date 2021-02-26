@@ -9,7 +9,6 @@ import RIBs
 import RxSwift
 
 protocol LoggedOutRouting: ViewableRouting {
-  // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
 }
 
 protocol LoggedOutPresentable: Presentable {
@@ -18,7 +17,7 @@ protocol LoggedOutPresentable: Presentable {
 }
 
 protocol LoggedOutListener: class {
-  // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
+  func successAuth(with response: AuthResponse)
 }
 
 final class LoggedOutInteractor:
@@ -49,12 +48,15 @@ final class LoggedOutInteractor:
   
   func signIn(with provider: AuthProvider?) {
     guard let provider = provider else { return }
-    
+    print("\(provider)로 로그인 시도")
     Auth.of(provider)
       .authorize()
       .subscribe(onNext: { response in
+        print("=================")
         print(response.provider)
         print(response.accessToken)
+        print("=================")
       })
-      .disposed(by: disposeBag)  }
+      .disposed(by: disposeBag)
+  }
 }

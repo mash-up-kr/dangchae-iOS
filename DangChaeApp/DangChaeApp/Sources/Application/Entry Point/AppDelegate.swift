@@ -8,12 +8,13 @@
 import UIKit
 import RIBs
 import Then
+import KakaoSDKAuth
+import NaverThirdPartyLogin
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-  
+final class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
-  var launchRouter: LaunchRouting?
+  private var launchRouter: LaunchRouting?
   
   func application(
     _ application: UIApplication,
@@ -24,6 +25,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return true
   }
   
+  func application(
+    _ app: UIApplication,
+    open url: URL,
+    options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+  ) -> Bool {
+    //    let needsOpenURL = handleKakaoURL(with: url) ||
+    print(url)
+    return handleNaverURL(app, open: url, options: options)
+    //    return needsOpenURL
+  }
+  
+}
+
+// MARK: Configuration
+extension AppDelegate {
   private func configureRIBs() {
     let window = UIWindow()
     self.window = window
@@ -32,32 +48,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     rootRouter.launchFromWindow(window)
   }
   
-  func application(
-    _ app: UIApplication,
-    open url: URL,
-    options: [UIApplication.OpenURLOptionsKey : Any] = [:]
-  ) -> Bool {
-    return handleKakaoURL(with: url)
-  }
-  
-}
-
-import NaverThirdPartyLogin
-extension AppDelegate {
   private func configureNaverAuth() {
     NaverThirdPartyLoginConnection.getSharedInstance().do {
       $0.serviceUrlScheme = kServiceAppUrlScheme
       $0.consumerKey = kConsumerKey
       $0.consumerSecret = kConsumerSecret
       $0.appName = kServiceAppName
+      $0.isInAppOauthEnable = true
+      $0.isNaverAppOauthEnable = true
     }
   }
-}
-
-import KakaoSDKAuth
-extension AppDelegate {
+  
   private func handleKakaoURL(with url: URL) -> Bool {
     guard AuthApi.isKakaoTalkLoginUrl(url) else { return false }
     return AuthController.handleOpenUrl(url: url)
+  }
+  
+  private func handleNaverURL(
+    _ app: UIApplication,
+    open url: URL,
+    options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+  ) -> Bool {
+    guard let naverLogin = NaverThirdPartyLoginConnection.getSharedInstance() else { return false }
+    return naverLogin.application(app, open: url, options: options)
   }
 }

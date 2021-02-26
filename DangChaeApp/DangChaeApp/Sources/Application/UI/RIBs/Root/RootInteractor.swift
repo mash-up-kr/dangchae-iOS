@@ -27,7 +27,6 @@ final class RootInteractor:
   RootInteractable,
   RootPresentableListener
 {
-  
   weak var router: RootRouting?
   weak var listener: RootListener?
   
@@ -46,4 +45,9 @@ final class RootInteractor:
     super.willResignActive()
     // TODO: Pause any business logic.
   }
+  
+  func successAuth(with response: AuthResponse) {
+    
+  }
+  
 }

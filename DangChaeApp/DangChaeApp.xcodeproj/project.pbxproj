@@ -25,6 +25,9 @@
 		3915633225E937620082B040 /* KakaoAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915633125E937620082B040 /* KakaoAuth.swift */; };
 		3915638025E9402E0082B040 /* NaverAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915637F25E9402E0082B040 /* NaverAuth.swift */; };
 		3915638525E940360082B040 /* AppleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915638425E940360082B040 /* AppleAuth.swift */; };
+		3915639F25E94D140082B040 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3915639E25E94D140082B040 /* AuthProvider.swift */; };
+		391563A725E94D2F0082B040 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391563A625E94D2F0082B040 /* AuthResponse.swift */; };
+		391563AD25E952D20082B040 /* NaverThirdPartyLoginConnection+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391563AC25E952D20082B040 /* NaverThirdPartyLoginConnection+Rx.swift */; };
 		3923966125B65250006B4A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923966025B65250006B4A1F /* AppDelegate.swift */; };
 		3923966525B65250006B4A1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923966425B65250006B4A1F /* ViewController.swift */; };
 		3923966825B65250006B4A1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3923966625B65250006B4A1F /* Main.storyboard */; };
@@ -77,6 +80,9 @@
 		3915633125E937620082B040 /* KakaoAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuth.swift; sourceTree = "<group>"; };
 		3915637F25E9402E0082B040 /* NaverAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverAuth.swift; sourceTree = "<group>"; };
 		3915638425E940360082B040 /* AppleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuth.swift; sourceTree = "<group>"; };
+		3915639E25E94D140082B040 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		391563A625E94D2F0082B040 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		391563AC25E952D20082B040 /* NaverThirdPartyLoginConnection+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NaverThirdPartyLoginConnection+Rx.swift"; sourceTree = "<group>"; };
 		3923965D25B65250006B4A1F /* DangChaeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DangChaeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3923966025B65250006B4A1F /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
 		3923966425B65250006B4A1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +204,7 @@
 		3915633025E9370D0082B040 /* OAuthProvider */ = {
 			isa = PBXGroup;
 			children = (
+				3915639E25E94D140082B040 /* AuthProvider.swift */,
 				3915633125E937620082B040 /* KakaoAuth.swift */,
 				3915637F25E9402E0082B040 /* NaverAuth.swift */,
 				3915638425E940360082B040 /* AppleAuth.swift */,
@@ -208,10 +215,20 @@
 		3915637B25E93EC60082B040 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				391563AB25E952BB0082B040 /* Rx */,
 				3915633025E9370D0082B040 /* OAuthProvider */,
 				391562CE25E91ADA0082B040 /* OAuth.swift */,
+				391563A625E94D2F0082B040 /* AuthResponse.swift */,
 			);
 			path = Authorization;
+			sourceTree = "<group>";
+		};
+		391563AB25E952BB0082B040 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				391563AC25E952D20082B040 /* NaverThirdPartyLoginConnection+Rx.swift */,
+			);
+			path = Rx;
 			sourceTree = "<group>";
 		};
 		3923965425B65250006B4A1F = {
@@ -644,6 +661,7 @@
 				391562F125E920750082B040 /* RootBuilder.swift in Sources */,
 				391562F025E920750082B040 /* RootViewController.swift in Sources */,
 				3915631525E9246E0082B040 /* LoggedOutInteractor.swift in Sources */,
+				391563AD25E952D20082B040 /* NaverThirdPartyLoginConnection+Rx.swift in Sources */,
 				3915631425E9246E0082B040 /* LoggedOutBuilder.swift in Sources */,
 				3915632925E934570082B040 /* StoryboardBuildable.swift in Sources */,
 				392396DF25B6561C006B4A1F /* View.swift in Sources */,
@@ -655,6 +673,7 @@
 				3915633225E937620082B040 /* KakaoAuth.swift in Sources */,
 				3915638525E940360082B040 /* AppleAuth.swift in Sources */,
 				391562F225E920750082B040 /* RootInteractor.swift in Sources */,
+				3915639F25E94D140082B040 /* AuthProvider.swift in Sources */,
 				391562EE25E920750082B040 /* RootRouter.swift in Sources */,
 				3923966125B65250006B4A1F /* AppDelegate.swift in Sources */,
 				392396C525B654FD006B4A1F /* Data.swift in Sources */,
@@ -662,6 +681,7 @@
 				3915631125E9246E0082B040 /* LoggedOutRouter.swift in Sources */,
 				3915631E25E9278F0082B040 /* View+IB.swift in Sources */,
 				391562CF25E91ADA0082B040 /* OAuth.swift in Sources */,
+				391563A725E94D2F0082B040 /* AuthResponse.swift in Sources */,
 				392396DA25B6560C006B4A1F /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
