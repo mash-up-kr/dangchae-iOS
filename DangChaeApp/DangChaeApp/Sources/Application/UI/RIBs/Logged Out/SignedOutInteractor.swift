@@ -48,14 +48,11 @@ final class SignedOutInteractor:
   
   func signIn(with provider: AuthProvider?) {
     guard let provider = provider else { return }
-    print("\(provider)로 로그인 시도")
+    Logger.log("\(provider)로 로그인 시도")
     Auth.of(provider)
       .authorize()
       .subscribe(onNext: { response in
-        print("=================")
-        print(response.provider)
-        print(response.accessToken)
-        print("=================")
+        Logger.log("=================\n\(response.provider)\n\(response.accessToken)\n=================")
       })
       .disposed(by: disposeBag)
   }

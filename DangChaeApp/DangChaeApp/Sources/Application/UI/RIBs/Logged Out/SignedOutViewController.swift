@@ -31,7 +31,7 @@ final class SignedOutViewController:
     super.viewDidLoad()
   }
   
-  @IBAction func loginButtonDidTap(_ sender: UIButton) {
+  @IBAction func signInButtonDidTap(_ sender: UIButton) {
     listener?.signIn(with: provider(of: sender))
   }
   

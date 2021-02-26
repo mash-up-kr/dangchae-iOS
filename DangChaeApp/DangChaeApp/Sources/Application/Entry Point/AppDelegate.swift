@@ -30,10 +30,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     open url: URL,
     options: [UIApplication.OpenURLOptionsKey : Any] = [:]
   ) -> Bool {
-    //    let needsOpenURL = handleKakaoURL(with: url) ||
-    print(url)
-    return handleNaverURL(app, open: url, options: options)
-    //    return needsOpenURL
+    let needsOpenURL = handleKakaoURL(with: url) || handleNaverURL(app, open: url, options: options)
+    return needsOpenURL
   }
   
 }
