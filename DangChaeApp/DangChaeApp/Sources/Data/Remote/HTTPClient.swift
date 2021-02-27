@@ -6,6 +6,7 @@
 //
 
 import Moya
+import MoyaSugar
 import RxSwift
 
 final class HTTPClient: RemoteDataSource {
@@ -37,8 +38,4 @@ final class HTTPClient: RemoteDataSource {
       return Disposables.create()
     }
   }
-}
-
-protocol DangChaeAPI: TargetType {
-  associatedtype Response: Decodable
 }

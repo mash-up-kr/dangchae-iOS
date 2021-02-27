@@ -52,8 +52,10 @@ final class SignedOutInteractor:
     
     Auth.of(provider)
       .authorize()
-      .subscribe(onNext: { response in
-        Logger.log("🔐==================================\n\(response.provider)\n\(response.accessToken)\n==================================")
+      .subscribe(onNext: { [weak self] response in
+        Logger.log(response.provider)
+        Logger.log(response.accessToken)
+        self?.listener?.successAuth(with: response)
       })
       .disposed(by: disposeBag)
   }

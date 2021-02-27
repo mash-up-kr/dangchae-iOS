@@ -9,6 +9,7 @@ import UIKit
 import RIBs
 import Then
 import KakaoSDKAuth
+import KakaoSDKCommon
 import NaverThirdPartyLogin
 
 @main
@@ -20,8 +21,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-    configureRIBs()
-    configureNaverAuth()
+    preview()
+    //    configureRIBs()
+    //    configureKakaoAuth()
+    //    configureNaverAuth()
     return true
   }
   
@@ -30,6 +33,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     open url: URL,
     options: [UIApplication.OpenURLOptionsKey : Any] = [:]
   ) -> Bool {
+    //   return handleNaverURL(app, open: url, options: options)
     let needsOpenURL = handleKakaoURL(with: url) || handleNaverURL(app, open: url, options: options)
     return needsOpenURL
   }
@@ -46,15 +50,29 @@ extension AppDelegate {
     rootRouter.launchFromWindow(window)
   }
   
+  private func configureKakaoAuth() {
+    KakaoSDKCommon.initSDK(appKey: "066f8481f7118251d059e16284d42980")
+  }
+  
   private func configureNaverAuth() {
     NaverThirdPartyLoginConnection.getSharedInstance().do {
-      $0.serviceUrlScheme = kServiceAppUrlScheme
-      $0.consumerKey = kConsumerKey
-      $0.consumerSecret = kConsumerSecret
-      $0.appName = kServiceAppName
+      $0.serviceUrlScheme = "udada"
+      $0.consumerKey = kConsumerKey// "YO0yyr95i1heHnDJzci1"
+      $0.consumerSecret = "fmVGBQUULp"
+      $0.appName = "우다다"
       $0.isInAppOauthEnable = true
-      $0.isNaverAppOauthEnable = true
+      $0.setOnlyPortraitSupportInIphone(true)
+      $0.isNaverAppOauthEnable = false
     }
+  }
+  
+  private func preview() {
+    let viewController = HomeViewController.instantiate()
+    let window = UIWindow()
+    window.rootViewController = viewController
+    
+    self.window = window
+    window.makeKeyAndVisible()
   }
   
   private func handleKakaoURL(with url: URL) -> Bool {
