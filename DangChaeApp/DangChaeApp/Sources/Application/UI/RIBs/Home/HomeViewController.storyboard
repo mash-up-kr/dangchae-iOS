@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vKn-9P-Ny8">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,25 +14,102 @@
             <objects>
                 <viewController id="vKn-9P-Ny8" customClass="HomeViewController" customModule="DangChaeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BNZ-bO-rhc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A68-ge-ycq" customClass="UserHeaderView" customModule="DangChaeApp" customModuleProvider="target">
-                                <rect key="frame" x="8" y="70" width="359" height="56"/>
+                                <rect key="frame" x="8" y="70" width="398" height="56"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="Ke6-ez-77d"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8z-oj-kbZ" customClass="DiaryInfoHeaderView" customModule="DangChaeApp" customModuleProvider="target">
+                                <rect key="frame" x="8" y="162" width="250" height="125"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="9gQ-Hu-LYR"/>
+                                    <constraint firstAttribute="width" constant="250" id="H6j-vp-9Le"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZSz-R3-efT">
+                                <rect key="frame" x="0.0" y="343" width="414" height="270"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.50196078430000002" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="U1e-x2-AXg"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K2B-QG-Yif">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DiaryCoverCell" id="nkG-hq-PaL" customClass="DiaryCoverCell" customModule="DangChaeApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eHd-Ft-CCg">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se5-6X-cfh">
+                                <rect key="frame" x="39.666666666666657" y="743" width="335" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="1Ma-Cv-UI5"/>
+                                    <constraint firstAttribute="width" constant="335" id="doq-dU-GHL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="오늘 하루 기록하기">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="writeTodayDiaryButtonDidTap:" destination="vKn-9P-Ny8" eventType="touchUpInside" id="hBd-qF-QNU"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="nl1-2x-VtN">
+                                <rect key="frame" x="146" y="653" width="122" height="28"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HgA-Aw-ocO"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HgA-Aw-ocO" firstAttribute="trailing" secondItem="A68-ge-ycq" secondAttribute="trailing" constant="8" id="8f3-FR-zQT"/>
+                            <constraint firstItem="nl1-2x-VtN" firstAttribute="centerX" secondItem="BNZ-bO-rhc" secondAttribute="centerX" id="BbL-Pz-zrD"/>
+                            <constraint firstItem="d8z-oj-kbZ" firstAttribute="leading" secondItem="A68-ge-ycq" secondAttribute="leading" id="Bw2-pr-qAq"/>
+                            <constraint firstItem="se5-6X-cfh" firstAttribute="centerX" secondItem="BNZ-bO-rhc" secondAttribute="centerX" id="KVz-GF-Zpc"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="bottom" secondItem="se5-6X-cfh" secondAttribute="bottom" constant="63" id="NQ4-ax-LIh"/>
+                            <constraint firstItem="ZSz-R3-efT" firstAttribute="top" secondItem="d8z-oj-kbZ" secondAttribute="bottom" constant="56" id="Pd6-IN-xY8"/>
+                            <constraint firstItem="nl1-2x-VtN" firstAttribute="top" secondItem="ZSz-R3-efT" secondAttribute="bottom" constant="40" id="VKh-sw-bhp"/>
                             <constraint firstItem="A68-ge-ycq" firstAttribute="leading" secondItem="HgA-Aw-ocO" secondAttribute="leading" constant="8" id="VeD-Fq-fPJ"/>
-                            <constraint firstItem="A68-ge-ycq" firstAttribute="top" secondItem="HgA-Aw-ocO" secondAttribute="top" constant="70" id="ez9-3y-WbD"/>
+                            <constraint firstItem="d8z-oj-kbZ" firstAttribute="top" secondItem="A68-ge-ycq" secondAttribute="bottom" constant="36" id="aXp-ta-hEf"/>
+                            <constraint firstItem="A68-ge-ycq" firstAttribute="top" secondItem="BNZ-bO-rhc" secondAttribute="top" constant="70" id="ez9-3y-WbD"/>
+                            <constraint firstItem="ZSz-R3-efT" firstAttribute="leading" secondItem="HgA-Aw-ocO" secondAttribute="leading" id="gD1-9S-2d9"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="trailing" secondItem="ZSz-R3-efT" secondAttribute="trailing" id="hF0-Oe-IQl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="diaryInfoView" destination="d8z-oj-kbZ" id="RrV-L2-o68"/>
+                        <outlet property="diaryPageControl" destination="nl1-2x-VtN" id="FWG-9F-BXk"/>
+                        <outlet property="diarysCollectionView" destination="ZSz-R3-efT" id="UJK-oh-yaj"/>
+                        <outlet property="userInfoView" destination="A68-ge-ycq" id="hZh-mo-p0T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k0X-am-vwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,6 +119,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

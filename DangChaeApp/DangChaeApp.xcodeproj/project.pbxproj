@@ -61,6 +61,8 @@
 		39460EE325EA37B500F0F8CF /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39460EE225EA37B500F0F8CF /* UserHeaderView.swift */; };
 		39460EEB25EA7B5700F0F8CF /* DiaryInfoHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39460EEA25EA7B5700F0F8CF /* DiaryInfoHeaderView.xib */; };
 		39460EF025EA7B7000F0F8CF /* DiaryInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39460EEF25EA7B7000F0F8CF /* DiaryInfoHeaderView.swift */; };
+		39E2C46125EAF148003769DD /* DiaryCoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E2C45F25EAF148003769DD /* DiaryCoverCell.swift */; };
+		39E2C46225EAF148003769DD /* DiaryCoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E2C46025EAF148003769DD /* DiaryCoverCell.xib */; };
 		3C6D5863FD6FC12671F7D138 /* Pods_DangChaeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619C0CEC98702ACBA8A9E40C /* Pods_DangChaeAppTests.framework */; };
 		5976E6D6683761EE95FD18CF /* Pods_DangChaeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1288B686A2217E73F573F16 /* Pods_DangChaeApp.framework */; };
 /* End PBXBuildFile section */
@@ -144,6 +146,8 @@
 		39460EE225EA37B500F0F8CF /* UserHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
 		39460EEA25EA7B5700F0F8CF /* DiaryInfoHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaryInfoHeaderView.xib; sourceTree = "<group>"; };
 		39460EEF25EA7B7000F0F8CF /* DiaryInfoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryInfoHeaderView.swift; sourceTree = "<group>"; };
+		39E2C45F25EAF148003769DD /* DiaryCoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCoverCell.swift; sourceTree = "<group>"; };
+		39E2C46025EAF148003769DD /* DiaryCoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaryCoverCell.xib; sourceTree = "<group>"; };
 		5127D22AE0DBB297573C37CC /* Pods_DangChaeApp_DangChaeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DangChaeApp_DangChaeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		619C0CEC98702ACBA8A9E40C /* Pods_DangChaeAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DangChaeAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6101E41852671D43010BA5 /* Pods-DangChaeApp-DangChaeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DangChaeApp-DangChaeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-DangChaeApp-DangChaeAppUITests/Pods-DangChaeApp-DangChaeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -497,12 +501,22 @@
 		39460EDC25EA361800F0F8CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				39E2C45E25EAF0D5003769DD /* Cell */,
 				39460EDD25EA363300F0F8CF /* UserHeaderView.xib */,
 				39460EE225EA37B500F0F8CF /* UserHeaderView.swift */,
 				39460EEA25EA7B5700F0F8CF /* DiaryInfoHeaderView.xib */,
 				39460EEF25EA7B7000F0F8CF /* DiaryInfoHeaderView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		39E2C45E25EAF0D5003769DD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				39E2C45F25EAF148003769DD /* DiaryCoverCell.swift */,
+				39E2C46025EAF148003769DD /* DiaryCoverCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F7C16BD454E48ADE02CF4981 /* Frameworks */ = {
@@ -623,6 +637,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E2C46225EAF148003769DD /* DiaryCoverCell.xib in Resources */,
 				3923966D25B65251006B4A1F /* LaunchScreen.storyboard in Resources */,
 				39460EEB25EA7B5700F0F8CF /* DiaryInfoHeaderView.xib in Resources */,
 				392396BE25B65468006B4A1F /* Assets.xcassets in Resources */,
@@ -794,6 +809,7 @@
 				3915638025E9402E0082B040 /* NaverAuth.swift in Sources */,
 				3915631125E9246E0082B040 /* SignedOutRouter.swift in Sources */,
 				3915631E25E9278F0082B040 /* View+IBInspectable.swift in Sources */,
+				39E2C46125EAF148003769DD /* DiaryCoverCell.swift in Sources */,
 				391562CF25E91ADA0082B040 /* OAuth.swift in Sources */,
 				39086E7C25E98ECA009DE893 /* HomeViewController.swift in Sources */,
 				391563A725E94D2F0082B040 /* AuthResponse.swift in Sources */,
