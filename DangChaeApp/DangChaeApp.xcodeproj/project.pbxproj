@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		349718A0DC725519E2BF10DF /* Pods_DangChaeApp_DangChaeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5127D22AE0DBB297573C37CC /* Pods_DangChaeApp_DangChaeAppUITests.framework */; };
+		390300BE25FB90D40045BC5D /* DiaryCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390300BD25FB90D40045BC5D /* DiaryCover.swift */; };
+		390300D725FBB3390045BC5D /* DiaryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390300D225FBB3390045BC5D /* DiaryRouter.swift */; };
+		390300D825FBB3390045BC5D /* DiaryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390300D325FBB3390045BC5D /* DiaryViewController.storyboard */; };
+		390300D925FBB3390045BC5D /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390300D425FBB3390045BC5D /* DiaryViewController.swift */; };
+		390300DA25FBB3390045BC5D /* DiaryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390300D525FBB3390045BC5D /* DiaryBuilder.swift */; };
+		390300DB25FBB3390045BC5D /* DiaryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390300D625FBB3390045BC5D /* DiaryInteractor.swift */; };
 		39086E5325E98B52009DE893 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39086E5225E98B52009DE893 /* Logger.swift */; };
 		39086E6925E98CA4009DE893 /* SignedUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39086E6425E98CA4009DE893 /* SignedUpRouter.swift */; };
 		39086E6A25E98CA4009DE893 /* SignedUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39086E6525E98CA4009DE893 /* SignedUpViewController.storyboard */; };
@@ -61,6 +67,7 @@
 		39460EE325EA37B500F0F8CF /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39460EE225EA37B500F0F8CF /* UserHeaderView.swift */; };
 		39460EEB25EA7B5700F0F8CF /* DiaryInfoHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39460EEA25EA7B5700F0F8CF /* DiaryInfoHeaderView.xib */; };
 		39460EF025EA7B7000F0F8CF /* DiaryInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39460EEF25EA7B7000F0F8CF /* DiaryInfoHeaderView.swift */; };
+		39D9DC5925EDD47A00483CA9 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D9DC5825EDD47A00483CA9 /* Reusable.swift */; };
 		39E2C46125EAF148003769DD /* DiaryCoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E2C45F25EAF148003769DD /* DiaryCoverCell.swift */; };
 		39E2C46225EAF148003769DD /* DiaryCoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E2C46025EAF148003769DD /* DiaryCoverCell.xib */; };
 		3C6D5863FD6FC12671F7D138 /* Pods_DangChaeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619C0CEC98702ACBA8A9E40C /* Pods_DangChaeAppTests.framework */; };
@@ -86,6 +93,12 @@
 
 /* Begin PBXFileReference section */
 		2AC4604AD49CFE0E2D468EC1 /* Pods-DangChaeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DangChaeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DangChaeAppTests/Pods-DangChaeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		390300BD25FB90D40045BC5D /* DiaryCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCover.swift; sourceTree = "<group>"; };
+		390300D225FBB3390045BC5D /* DiaryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryRouter.swift; sourceTree = "<group>"; };
+		390300D325FBB3390045BC5D /* DiaryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiaryViewController.storyboard; sourceTree = "<group>"; };
+		390300D425FBB3390045BC5D /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		390300D525FBB3390045BC5D /* DiaryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryBuilder.swift; sourceTree = "<group>"; };
+		390300D625FBB3390045BC5D /* DiaryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryInteractor.swift; sourceTree = "<group>"; };
 		39086E3525E98767009DE893 /* DangChaeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DangChaeApp.entitlements; sourceTree = "<group>"; };
 		39086E5225E98B52009DE893 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		39086E6425E98CA4009DE893 /* SignedUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedUpRouter.swift; sourceTree = "<group>"; };
@@ -146,6 +159,7 @@
 		39460EE225EA37B500F0F8CF /* UserHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
 		39460EEA25EA7B5700F0F8CF /* DiaryInfoHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaryInfoHeaderView.xib; sourceTree = "<group>"; };
 		39460EEF25EA7B7000F0F8CF /* DiaryInfoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryInfoHeaderView.swift; sourceTree = "<group>"; };
+		39D9DC5825EDD47A00483CA9 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		39E2C45F25EAF148003769DD /* DiaryCoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCoverCell.swift; sourceTree = "<group>"; };
 		39E2C46025EAF148003769DD /* DiaryCoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaryCoverCell.xib; sourceTree = "<group>"; };
 		5127D22AE0DBB297573C37CC /* Pods_DangChaeApp_DangChaeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DangChaeApp_DangChaeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +211,26 @@
 				8A3523C2DC31CBA8FDCD76C8 /* Pods-DangChaeAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		390300B925FB8F740045BC5D /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				390300BD25FB90D40045BC5D /* DiaryCover.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		390300C325FBB2F10045BC5D /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				390300D225FBB3390045BC5D /* DiaryRouter.swift */,
+				390300D325FBB3390045BC5D /* DiaryViewController.storyboard */,
+				390300D425FBB3390045BC5D /* DiaryViewController.swift */,
+				390300D525FBB3390045BC5D /* DiaryBuilder.swift */,
+				390300D625FBB3390045BC5D /* DiaryInteractor.swift */,
+			);
+			path = Diary;
 			sourceTree = "<group>";
 		};
 		39086E6325E98C78009DE893 /* Signed Up */ = {
@@ -400,6 +434,7 @@
 		3923969B25B652BF006B4A1F /* RIBs */ = {
 			isa = PBXGroup;
 			children = (
+				390300C325FBB2F10045BC5D /* Diary */,
 				391562F925E9215B0082B040 /* Launch */,
 				391562E825E9205C0082B040 /* Root */,
 				3915630525E922FE0082B040 /* Signed Out */,
@@ -413,6 +448,7 @@
 		3923969C25B652C6006B4A1F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				390300B925FB8F740045BC5D /* Diary */,
 				3915637B25E93EC60082B040 /* Authorization */,
 			);
 			path = Domain;
@@ -486,6 +522,7 @@
 				392396C325B654A3006B4A1F /* Extensions */,
 				39086E8A25E991A6009DE893 /* XibLoadable.swift */,
 				3915632825E934570082B040 /* StoryboardBuildable.swift */,
+				39D9DC5825EDD47A00483CA9 /* Reusable.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -638,6 +675,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39E2C46225EAF148003769DD /* DiaryCoverCell.xib in Resources */,
+				390300D825FBB3390045BC5D /* DiaryViewController.storyboard in Resources */,
 				3923966D25B65251006B4A1F /* LaunchScreen.storyboard in Resources */,
 				39460EEB25EA7B5700F0F8CF /* DiaryInfoHeaderView.xib in Resources */,
 				392396BE25B65468006B4A1F /* Assets.xcassets in Resources */,
@@ -785,20 +823,25 @@
 				39460EBC25EA1D1E00F0F8CF /* DangChaeAPI.swift in Sources */,
 				3915631425E9246E0082B040 /* SignedOutBuilder.swift in Sources */,
 				39086E8B25E991A6009DE893 /* XibLoadable.swift in Sources */,
+				390300D725FBB3390045BC5D /* DiaryRouter.swift in Sources */,
 				39460EB525EA11B100F0F8CF /* SignedInRouter.swift in Sources */,
 				3915632925E934570082B040 /* StoryboardBuildable.swift in Sources */,
 				392396DF25B6561C006B4A1F /* View.swift in Sources */,
 				391563C125E97B210082B040 /* ASAuthorizationController+Rx.swift in Sources */,
 				39086E9125E99334009DE893 /* HTTPClient.swift in Sources */,
+				390300DA25FBB3390045BC5D /* DiaryBuilder.swift in Sources */,
 				39460EB725EA11B100F0F8CF /* SignedInInteractor.swift in Sources */,
 				392396D525B65519006B4A1F /* Core.swift in Sources */,
 				3915631325E9246E0082B040 /* SignedOutViewController.swift in Sources */,
+				390300DB25FBB3390045BC5D /* DiaryInteractor.swift in Sources */,
 				3923966525B65250006B4A1F /* ViewController.swift in Sources */,
+				390300BE25FB90D40045BC5D /* DiaryCover.swift in Sources */,
 				39086E7E25E98ECA009DE893 /* HomeInteractor.swift in Sources */,
 				391562FB25E9216E0082B040 /* AppComponent.swift in Sources */,
 				3915633225E937620082B040 /* KakaoAuth.swift in Sources */,
 				3915638525E940360082B040 /* AppleAuth.swift in Sources */,
 				391562F225E920750082B040 /* RootInteractor.swift in Sources */,
+				390300D925FBB3390045BC5D /* DiaryViewController.swift in Sources */,
 				39086E6D25E98CA4009DE893 /* SignedUpInteractor.swift in Sources */,
 				3915639F25E94D140082B040 /* AuthProvider.swift in Sources */,
 				391562EE25E920750082B040 /* RootRouter.swift in Sources */,
@@ -812,6 +855,7 @@
 				39E2C46125EAF148003769DD /* DiaryCoverCell.swift in Sources */,
 				391562CF25E91ADA0082B040 /* OAuth.swift in Sources */,
 				39086E7C25E98ECA009DE893 /* HomeViewController.swift in Sources */,
+				39D9DC5925EDD47A00483CA9 /* Reusable.swift in Sources */,
 				391563A725E94D2F0082B040 /* AuthResponse.swift in Sources */,
 				39086E9D25E997D5009DE893 /* RemoteDataSource.swift in Sources */,
 				392396DA25B6560C006B4A1F /* Extensions.swift in Sources */,

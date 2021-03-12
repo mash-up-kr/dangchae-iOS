@@ -8,48 +8,38 @@
 import UIKit
 
 @IBDesignable
-final class DiaryCoverCell: UICollectionViewCell {
-  
+final class DiaryCoverCell: UICollectionViewCell, Reusable {
   override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code
   }
   
+  private var needsUpdateUI: Bool = true
+  private var diaryCoverShape: DiaryCover.Shape?
+  
   override func draw(_ rect: CGRect) {
     super.draw(rect)
-    self.borderWidth = 1
-    self.backgroundColor = .red
-    self.borderColor = .black
     
-    let number = [1,2,3].randomElement()!
-    switch number {
-    case 1: mask(with: pentagon1Points)
-    // drawShape(with: pentagon1Points, color: .cyan)
-    case 2: mask(with: pentagon2Points)
-    // drawShape(with: pentagon2Points, color: .green)
-    case 3: mask(with: pentagon3Points)
-    // drawShape(with: pentagon3Points, color: .magenta)
-    default: ()
+    if needsUpdateUI {
+      self.borderWidth = 1
+      self.backgroundColor = .red
+      self.borderColor = .black
+      
+      switch diaryCoverShape {
+      case .pentagon1:
+        drawShape(with: pentagon1Points, color: .cyan)
+      case .pentagon2:
+        drawShape(with: pentagon2Points, color: .green)
+      case .pentagon3:
+        drawShape(with: pentagon3Points, color: .magenta)
+      default: ()
+      }
+      needsUpdateUI = false
     }
   }
-  private func mask(with points: [CGPoint]) {
-    var points = points
-    guard !points.isEmpty else { return }
-    let origin = points.removeFirst()
-    
-    let path = UIBezierPath()
-    path.move(to: origin)
-    points.forEach { path.addLine(to: $0) }
-    path.close()
-    
-    let maskLayer = CAShapeLayer()
-    maskLayer.path = path.cgPath
-    maskLayer.fillRule = .evenOdd
-    maskLayer.bounds = frame
-    self.layer.mask = maskLayer
-    //
-    //    color.setFill()
-    //    path.fill()
+  
+  func configure(with diaryCover: DiaryCover) {
+    diaryCoverShape = diaryCover.shape
   }
   
   private func drawShape(with points: [CGPoint], color: UIColor) {
@@ -84,7 +74,6 @@ extension DiaryCoverCell {
      CGPoint(x: x(percent: 0.0), y: y(percent: 0.8)),
      CGPoint(x: x(percent: 0.05), y: y(percent: 0.2))]
   }
-  
   
   private var pentagon2Points: [CGPoint] {
     [CGPoint(x: x(percent: 0.8), y: y(percent: 0.0)),
