@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		349718A0DC725519E2BF10DF /* Pods_DangChaeApp_DangChaeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5127D22AE0DBB297573C37CC /* Pods_DangChaeApp_DangChaeAppUITests.framework */; };
-		390300BE25FB90D40045BC5D /* DiaryCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390300BD25FB90D40045BC5D /* DiaryCover.swift */; };
+		390300BE25FB90D40045BC5D /* Diary.Cover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390300BD25FB90D40045BC5D /* Diary.Cover.swift */; };
 		390300D725FBB3390045BC5D /* DiaryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390300D225FBB3390045BC5D /* DiaryRouter.swift */; };
 		390300D825FBB3390045BC5D /* DiaryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390300D325FBB3390045BC5D /* DiaryViewController.storyboard */; };
 		390300D925FBB3390045BC5D /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390300D425FBB3390045BC5D /* DiaryViewController.swift */; };
 		390300DA25FBB3390045BC5D /* DiaryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390300D525FBB3390045BC5D /* DiaryBuilder.swift */; };
 		390300DB25FBB3390045BC5D /* DiaryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390300D625FBB3390045BC5D /* DiaryInteractor.swift */; };
+		390300F825FBCAF00045BC5D /* DiaryPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390300F725FBCAF00045BC5D /* DiaryPageCell.swift */; };
 		39086E5325E98B52009DE893 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39086E5225E98B52009DE893 /* Logger.swift */; };
 		39086E6925E98CA4009DE893 /* SignedUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39086E6425E98CA4009DE893 /* SignedUpRouter.swift */; };
 		39086E6A25E98CA4009DE893 /* SignedUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39086E6525E98CA4009DE893 /* SignedUpViewController.storyboard */; };
@@ -67,6 +68,8 @@
 		39460EE325EA37B500F0F8CF /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39460EE225EA37B500F0F8CF /* UserHeaderView.swift */; };
 		39460EEB25EA7B5700F0F8CF /* DiaryInfoHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39460EEA25EA7B5700F0F8CF /* DiaryInfoHeaderView.xib */; };
 		39460EF025EA7B7000F0F8CF /* DiaryInfoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39460EEF25EA7B7000F0F8CF /* DiaryInfoHeaderView.swift */; };
+		3979288425FCA1FE0004CBFB /* Diary.Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979288325FCA1FE0004CBFB /* Diary.Page.swift */; };
+		39B94D3425FC998200DCE3F5 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B94D3325FC998200DCE3F5 /* Diary.swift */; };
 		39D9DC5925EDD47A00483CA9 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D9DC5825EDD47A00483CA9 /* Reusable.swift */; };
 		39E2C46125EAF148003769DD /* DiaryCoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E2C45F25EAF148003769DD /* DiaryCoverCell.swift */; };
 		39E2C46225EAF148003769DD /* DiaryCoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39E2C46025EAF148003769DD /* DiaryCoverCell.xib */; };
@@ -93,12 +96,13 @@
 
 /* Begin PBXFileReference section */
 		2AC4604AD49CFE0E2D468EC1 /* Pods-DangChaeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DangChaeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DangChaeAppTests/Pods-DangChaeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		390300BD25FB90D40045BC5D /* DiaryCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCover.swift; sourceTree = "<group>"; };
+		390300BD25FB90D40045BC5D /* Diary.Cover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.Cover.swift; sourceTree = "<group>"; };
 		390300D225FBB3390045BC5D /* DiaryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryRouter.swift; sourceTree = "<group>"; };
 		390300D325FBB3390045BC5D /* DiaryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiaryViewController.storyboard; sourceTree = "<group>"; };
 		390300D425FBB3390045BC5D /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		390300D525FBB3390045BC5D /* DiaryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryBuilder.swift; sourceTree = "<group>"; };
 		390300D625FBB3390045BC5D /* DiaryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryInteractor.swift; sourceTree = "<group>"; };
+		390300F725FBCAF00045BC5D /* DiaryPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryPageCell.swift; sourceTree = "<group>"; };
 		39086E3525E98767009DE893 /* DangChaeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DangChaeApp.entitlements; sourceTree = "<group>"; };
 		39086E5225E98B52009DE893 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		39086E6425E98CA4009DE893 /* SignedUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedUpRouter.swift; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 		39460EE225EA37B500F0F8CF /* UserHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
 		39460EEA25EA7B5700F0F8CF /* DiaryInfoHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaryInfoHeaderView.xib; sourceTree = "<group>"; };
 		39460EEF25EA7B7000F0F8CF /* DiaryInfoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryInfoHeaderView.swift; sourceTree = "<group>"; };
+		3979288325FCA1FE0004CBFB /* Diary.Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.Page.swift; sourceTree = "<group>"; };
+		39B94D3325FC998200DCE3F5 /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		39D9DC5825EDD47A00483CA9 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		39E2C45F25EAF148003769DD /* DiaryCoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCoverCell.swift; sourceTree = "<group>"; };
 		39E2C46025EAF148003769DD /* DiaryCoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiaryCoverCell.xib; sourceTree = "<group>"; };
@@ -216,7 +222,9 @@
 		390300B925FB8F740045BC5D /* Diary */ = {
 			isa = PBXGroup;
 			children = (
-				390300BD25FB90D40045BC5D /* DiaryCover.swift */,
+				390300BD25FB90D40045BC5D /* Diary.Cover.swift */,
+				39B94D3325FC998200DCE3F5 /* Diary.swift */,
+				3979288325FCA1FE0004CBFB /* Diary.Page.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -224,6 +232,7 @@
 		390300C325FBB2F10045BC5D /* Diary */ = {
 			isa = PBXGroup;
 			children = (
+				390300F525FBCAD30045BC5D /* Views */,
 				390300D225FBB3390045BC5D /* DiaryRouter.swift */,
 				390300D325FBB3390045BC5D /* DiaryViewController.storyboard */,
 				390300D425FBB3390045BC5D /* DiaryViewController.swift */,
@@ -231,6 +240,22 @@
 				390300D625FBB3390045BC5D /* DiaryInteractor.swift */,
 			);
 			path = Diary;
+			sourceTree = "<group>";
+		};
+		390300F525FBCAD30045BC5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				390300F625FBCAD90045BC5D /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		390300F625FBCAD90045BC5D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				390300F725FBCAF00045BC5D /* DiaryPageCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		39086E6325E98C78009DE893 /* Signed Up */ = {
@@ -814,6 +839,7 @@
 				391562F125E920750082B040 /* RootBuilder.swift in Sources */,
 				391562F025E920750082B040 /* RootViewController.swift in Sources */,
 				3915631525E9246E0082B040 /* SignedOutInteractor.swift in Sources */,
+				39B94D3425FC998200DCE3F5 /* Diary.swift in Sources */,
 				391563AD25E952D20082B040 /* NaverThirdPartyLoginConnection+Rx.swift in Sources */,
 				39460EF025EA7B7000F0F8CF /* DiaryInfoHeaderView.swift in Sources */,
 				39086E8325E9910B009DE893 /* View+.swift in Sources */,
@@ -835,12 +861,13 @@
 				3915631325E9246E0082B040 /* SignedOutViewController.swift in Sources */,
 				390300DB25FBB3390045BC5D /* DiaryInteractor.swift in Sources */,
 				3923966525B65250006B4A1F /* ViewController.swift in Sources */,
-				390300BE25FB90D40045BC5D /* DiaryCover.swift in Sources */,
+				390300BE25FB90D40045BC5D /* Diary.Cover.swift in Sources */,
 				39086E7E25E98ECA009DE893 /* HomeInteractor.swift in Sources */,
 				391562FB25E9216E0082B040 /* AppComponent.swift in Sources */,
 				3915633225E937620082B040 /* KakaoAuth.swift in Sources */,
 				3915638525E940360082B040 /* AppleAuth.swift in Sources */,
 				391562F225E920750082B040 /* RootInteractor.swift in Sources */,
+				390300F825FBCAF00045BC5D /* DiaryPageCell.swift in Sources */,
 				390300D925FBB3390045BC5D /* DiaryViewController.swift in Sources */,
 				39086E6D25E98CA4009DE893 /* SignedUpInteractor.swift in Sources */,
 				3915639F25E94D140082B040 /* AuthProvider.swift in Sources */,
@@ -853,6 +880,7 @@
 				3915631125E9246E0082B040 /* SignedOutRouter.swift in Sources */,
 				3915631E25E9278F0082B040 /* View+IBInspectable.swift in Sources */,
 				39E2C46125EAF148003769DD /* DiaryCoverCell.swift in Sources */,
+				3979288425FCA1FE0004CBFB /* Diary.Page.swift in Sources */,
 				391562CF25E91ADA0082B040 /* OAuth.swift in Sources */,
 				39086E7C25E98ECA009DE893 /* HomeViewController.swift in Sources */,
 				39D9DC5925EDD47A00483CA9 /* Reusable.swift in Sources */,
@@ -1029,8 +1057,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DangChaeApp/DangChaeApp.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BQHKQSA4Y;
 				INFOPLIST_FILE = "DangChaeApp/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1039,7 +1067,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dangchae.udada;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Udada Provisioning Profile";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1051,8 +1079,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DangChaeApp/DangChaeApp.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BQHKQSA4Y;
 				INFOPLIST_FILE = "DangChaeApp/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1061,7 +1089,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dangchae.udada;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Udada Provisioning Profile";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

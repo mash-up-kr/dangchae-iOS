@@ -10,7 +10,7 @@ import RxSwift
 import UIKit
 
 protocol HomePresentableListener: class {
-  func select(diary: DiaryCover)
+  func selectDiaryCover(atIndex: Int)
 }
 final class HomeViewController:
   UIViewController,
@@ -19,16 +19,14 @@ final class HomeViewController:
   StoryboardBuildable
 {
   
-  typealias DataSource = UICollectionViewDiffableDataSource<Section, DiaryCover>
-  typealias Snapshot = NSDiffableDataSourceSnapshot<Section, DiaryCover>
+  typealias DataSource = UICollectionViewDiffableDataSource<Section, Diary.Cover>
+  typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Diary.Cover>
   enum Section {
     case diarys
   }
   
   weak var listener: HomePresentableListener?
   private lazy var dataSource = makeDataSource()
-  
-  private var diaryCovers = DiaryCover.samples
   
   // MARK: 🖼 UI
   @IBOutlet private weak var userInfoView: UserHeaderView?
@@ -40,7 +38,6 @@ final class HomeViewController:
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    applySnapshot()
     configureCollectionViewLayout()
   }
   
@@ -56,6 +53,13 @@ final class HomeViewController:
     diarysCollectionView?.collectionViewLayout = layout
   }
   
+  func present(covers: [Diary.Cover]) {
+    var snapshot = Snapshot()
+    snapshot.appendSections([.diarys])
+    snapshot.appendItems(covers)
+    dataSource?.apply(snapshot)
+  }
+  
   // MARK: 💽 DataSource
   private func makeDataSource() -> DataSource? {
     guard let collectionView = diarysCollectionView else { return nil }
@@ -63,24 +67,15 @@ final class HomeViewController:
       collectionView: collectionView,
       cellProvider: { (collectionView, indexPath, diaryCover) in
         let cell = collectionView.dequeueReusableCell(type: DiaryCoverCell.self, indexPath: indexPath)
-      
         cell.configure(with: diaryCover)
         return cell
       }
     )
   }
-  
-  private func applySnapshot(animated: Bool = true) {
-    var snapshot = Snapshot()
-    snapshot.appendSections([.diarys])
-    snapshot.appendItems(diaryCovers)
-    dataSource?.apply(snapshot)
-  }
 }
 extension HomeViewController: UICollectionViewDelegate {
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    guard let diary = diaryCovers[safe: indexPath.row] else { return }
-    listener?.select(diary: diary)
+    listener?.selectDiaryCover(atIndex: indexPath.row)
   }
 }
 

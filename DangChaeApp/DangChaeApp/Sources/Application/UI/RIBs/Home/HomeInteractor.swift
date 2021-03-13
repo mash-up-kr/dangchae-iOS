@@ -10,12 +10,13 @@ import RxSwift
 
 protocol HomeRouting: ViewableRouting {
   // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
-  func routeTo(diary: DiaryCover)
+  func routeTo(diary: Diary.Cover)
 }
 
 protocol HomePresentable: Presentable {
   var listener: HomePresentableListener? { get set }
   // TODO: Declare methods the interactor can invoke the presenter to present data.
+  func present(covers: [Diary.Cover])
 }
 
 protocol HomeListener: class {
@@ -35,7 +36,8 @@ final class HomeInteractor: PresentableInteractor<HomePresentable>, HomeInteract
   
   override func didBecomeActive() {
     super.didBecomeActive()
-    // TODO: Implement business logic here.
+    
+    presenter.present(covers: Diary.Cover.samples)
   }
   
   override func willResignActive() {
@@ -43,8 +45,8 @@ final class HomeInteractor: PresentableInteractor<HomePresentable>, HomeInteract
     // TODO: Pause any business logic.
   }
   
-  func select(diary: DiaryCover) {
-    router?.routeTo(diary: diary)
+  func selectDiaryCover(atIndex: Int) {
+    ()
   }
   
 }

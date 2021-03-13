@@ -10,7 +10,6 @@ import MoyaSugar
 import RxSwift
 
 final class HTTPClient: RemoteDataSource {
-  
   static let shared = HTTPClient()
   
   private let provider = MoyaProvider<MultiTarget>()

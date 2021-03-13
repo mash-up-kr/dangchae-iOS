@@ -9,13 +9,17 @@ import UIKit
 
 @IBDesignable
 final class DiaryCoverCell: UICollectionViewCell, Reusable {
-  override func awakeFromNib() {
-    super.awakeFromNib()
-    // Initialization code
-  }
   
   private var needsUpdateUI: Bool = true
-  private var diaryCoverShape: DiaryCover.Shape?
+  private var diaryCoverShape: Diary.Cover.Shape?
+  
+  func configure(with diaryCover: Diary.Cover) {
+    diaryCoverShape = diaryCover.shape
+  }
+  
+}
+// MARK: - 🎨 Draw Shape
+extension DiaryCoverCell {
   
   override func draw(_ rect: CGRect) {
     super.draw(rect)
@@ -36,10 +40,6 @@ final class DiaryCoverCell: UICollectionViewCell, Reusable {
       }
       needsUpdateUI = false
     }
-  }
-  
-  func configure(with diaryCover: DiaryCover) {
-    diaryCoverShape = diaryCover.shape
   }
   
   private func drawShape(with points: [CGPoint], color: UIColor) {
@@ -63,7 +63,6 @@ final class DiaryCoverCell: UICollectionViewCell, Reusable {
   private func y(percent: CGFloat) -> CGFloat {
     return (self.bounds.maxY - self.bounds.minY) * percent
   }
-  
 }
 extension DiaryCoverCell {
   

@@ -9,8 +9,8 @@ import RxCocoa
 import RxSwift
 import NaverThirdPartyLogin
 
-final class RxNaverThirdPartyLoginConnectionProxy:
-  DelegateProxy<NaverThirdPartyLoginConnection, NaverThirdPartyLoginConnectionDelegate>,
+final class RxNaverThirdPartyLoginConnectionProxy
+: DelegateProxy<NaverThirdPartyLoginConnection, NaverThirdPartyLoginConnectionDelegate>,
   DelegateProxyType,
   NaverThirdPartyLoginConnectionDelegate
 {
