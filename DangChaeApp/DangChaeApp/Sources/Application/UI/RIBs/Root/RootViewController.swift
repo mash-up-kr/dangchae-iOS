@@ -19,7 +19,8 @@ final class RootViewController:
   UIViewController,
   RootPresentable,
   RootViewControllable,
-  StoryboardBuildable
+  StoryboardBuildable,
+  SignedInViewControllable
 {
   weak var listener: RootPresentableListener?
   

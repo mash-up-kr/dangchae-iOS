@@ -10,7 +10,7 @@ import RxSwift
 
 protocol RootRouting: LaunchRouting {
   func routeToLoggedOut()
-  func routeToLoggedIn()
+  func routeToSignIn()
 }
 
 protocol RootPresentable: Presentable {
@@ -47,7 +47,7 @@ final class RootInteractor:
   }
   
   func successAuth(with response: AuthResponse) {
-    
+    router?.routeToSignIn()
   }
   
 }

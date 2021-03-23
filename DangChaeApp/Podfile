@@ -12,7 +12,6 @@ target 'DangChaeApp' do
   
   # 📐 Layout
   pod 'SnapKit'
-  # pod 'Texture'
   
   # ⌛️ Async Stream
   pod 'RxSwift'
@@ -20,9 +19,7 @@ target 'DangChaeApp' do
   
   # 🌐 Network
   pod 'Moya'
-  #pod 'Moya/RxSwift'
   pod 'MoyaSugar'
-  #pod 'MoyaSugar/RxSwift' # Use with RxSwift
   
   # 💉 Dependency Injection
   pod 'Swinject'
@@ -36,7 +33,7 @@ target 'DangChaeApp' do
   pod 'FLEX', :configurations => ['Debug']
   
   # 🎸 Misc
-  # pod 'lottie-ios'
+#   pod 'lottie-ios'
   
   # 🔐 Auth
   pod 'naveridlogin-sdk-ios'
