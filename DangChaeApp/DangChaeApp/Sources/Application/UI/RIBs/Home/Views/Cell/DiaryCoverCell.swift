@@ -25,10 +25,6 @@ extension DiaryCoverCell {
     super.draw(rect)
     
     if needsUpdateUI {
-      self.borderWidth = 1
-      self.backgroundColor = .red
-      self.borderColor = .black
-      
       switch diaryCoverShape {
       case .pentagon1:
         drawShape(with: pentagon1Points, color: .cyan)

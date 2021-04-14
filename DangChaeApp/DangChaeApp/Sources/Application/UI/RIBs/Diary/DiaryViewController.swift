@@ -32,6 +32,7 @@ final class DiaryViewController:
   weak var listener: DiaryPresentableListener?
   private lazy var dataSource = makeDataSource()
   
+  // MARK: - 🖼 UI
   @IBOutlet private weak var diarysTableView: UITableView?
   @IBOutlet private weak var writeButton: UIButton?
   
@@ -41,7 +42,7 @@ final class DiaryViewController:
     configureUI()
   }
   
-  
+  // MARK: - 🥊 Action
   @IBAction private func backButtonDidTap(_ sender: Any) {
     listener?.close()
   }
@@ -58,6 +59,7 @@ final class DiaryViewController:
     listener?.changeDate()
   }
   
+  // MARK: - 🎨 Present
   func present(pages: [Diary.Page]) {
     var snapshot = Snapshot()
     snapshot.appendSections([.pages])
@@ -65,6 +67,7 @@ final class DiaryViewController:
     dataSource?.apply(snapshot)
   }
   
+  // MARK: - 🔩 Configure
   private func configureUI() {
     if let writeButton = writeButton {
       view.bringSubviewToFront(writeButton)
@@ -80,6 +83,8 @@ final class DiaryViewController:
     diarysTableView?.estimatedRowHeight = 150
   }
   
+  
+  // MARK: - 💽 DataSource
   private func makeDataSource() -> DataSource? {
     guard let tableView = diarysTableView else { return nil }
     return DataSource(tableView: tableView) { tableView, indexPath, page in

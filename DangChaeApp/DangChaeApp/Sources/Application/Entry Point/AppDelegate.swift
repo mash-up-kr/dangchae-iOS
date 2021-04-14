@@ -68,9 +68,9 @@ extension AppDelegate {
   
   private func preview() {
     let pages = Diary.Page.samples
-    let viewController = DiaryViewController.instantiate()
+    let viewController = HomeViewController.instantiate()
     _ = viewController.view
-    viewController.present(pages: pages)
+    viewController.present(covers: Diary.Cover.samples)
     let window = UIWindow()
     window.rootViewController = viewController
     

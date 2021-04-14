@@ -25,6 +25,7 @@ final class SignedOutInteractor:
   SignedOutInteractable,
   SignedOutPresentableListener
 {
+  
   weak var router: SignedOutRouting?
   weak var listener: SignedOutListener?
   

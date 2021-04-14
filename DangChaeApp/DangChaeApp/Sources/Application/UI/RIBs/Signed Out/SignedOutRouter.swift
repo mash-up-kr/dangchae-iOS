@@ -20,6 +20,7 @@ final class SignedOutRouter:
   ViewableRouter<SignedOutInteractable, SignedOutViewControllable>,
   SignedOutRouting
 {
+  
   // MARK: 🏁 Initialization
   override init(
     interactor: SignedOutInteractable,

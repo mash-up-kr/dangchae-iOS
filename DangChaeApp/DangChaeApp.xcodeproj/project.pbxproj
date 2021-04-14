@@ -222,8 +222,8 @@
 		390300B925FB8F740045BC5D /* Diary */ = {
 			isa = PBXGroup;
 			children = (
-				390300BD25FB90D40045BC5D /* Diary.Cover.swift */,
 				39B94D3325FC998200DCE3F5 /* Diary.swift */,
+				390300BD25FB90D40045BC5D /* Diary.Cover.swift */,
 				3979288325FCA1FE0004CBFB /* Diary.Page.swift */,
 			);
 			path = Diary;

@@ -46,7 +46,9 @@ final class DiaryInteractor
     // TODO: Pause any business logic.
   }
   
+  // MARK: - 🧮 Business Logic
   func close() {
+    
   }
   
   func inviteMember() {
